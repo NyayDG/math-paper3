@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nyay D.G.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Beta, Gamma Functions and Multiple Integrals</h2>
+        <p>
+            Beta and Gamma functions are mathematical functions that are often <br>
+            used in calculus and statistics. The Beta function is defined as:<br>
+            B(x, y) = ∫(from 0 to 1) t^(x-1) (1-t)^(y-1) dt<br><br>
+
+            where x and y are real numbers greater than 0. The Gamma function is defined as:<br>
+            Γ(x) = ∫(from 0 to ∞) t^(x-1) e^(-t) dt<br><br>
+
+            where x is a real number greater than 0.<br>
+            The Beta function can be used to calculate probabilities in statistics, <br>
+            and it is often used in the context of Bayesian statistics. <br>
+            The Gamma function is used in a wide range of mathematical applications, <br>
+            including statistics, physics, and engineering.<br><br>
+
+            One important property of the Gamma function is that it satisfies the <br>
+            following recursion formula:<br>
+            Γ(x+1) = x Γ(x)<br><br>
+
+            This means that we can calculate the value of the Gamma function for <br>
+            any value of x by using the Gamma function for a smaller value of x. <br>
+            For example, if we know that Γ(4) = 6, we can use the recursion formula to calculate Γ(5):<br>
+            Γ(5) = 4 Γ(4) = 4*6 = 24<br><br>
+
+            Multiple integrals are integrals that involve more than one variable. <br>
+            3For example, a double integral is an integral over a region in the xy-plane, <br>
+            and it is denoted by:<br>
+            ∬ f(x, y) dA<br><br>
+
+            where dA represents the area element. <br>
+            Triple integrals involve three variables, and they are denoted by:<br>
+            ∭ f(x, y, z) dV<br><br>
+
+            where dV represents the volume element.<br>
+            Multiple integrals can be used to calculate volumes, areas, and <br>
+            other physical quantities in mathematics and physics. <br>
+            For example, the volume of a solid can be calculated using a <br>
+            triple integral over the region occupied by the solid.<br><br>
+
+            One important property of multiple integrals is that they satisfy the <br>
+            Fubini's theorem, which states that the order of integration can be <br>
+            changed without affecting the value of the integral. For example, <br>
+            if we have a double integral over a region R, we can calculate it as:<br>
+            ∬ f(x, y) dA = ∫(from a to b) ∫(from c to d) f(x, y) dx dy = ∫(from c to d) ∫(from a to b) f(x, y) dy dx<br><br>
+
+            This means that we can integrate first with respect to one variable and <br>
+            then with respect to the other, or vice versa.<br><br>
+
+            Overall, Beta and Gamma functions and multiple integrals are <br>
+            important concepts in calculus and mathematics, and they have <br>
+            many applications in various fields, including physics, engineering, and statistics.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Gamma Function</h2>
+        <p>
+            The Gamma function is a mathematical function that extends the concept of <br>
+            factorials to real and complex numbers. It's often denoted by the Greek letter Γ (gamma).<br><br>
+
+            The definition of the Gamma function is:<br>
+            Γ(z) = ∫(from 0 to infinity) t^(z-1) e^(-t) dt<br>
+            where z is a complex number with a positive real part.<br><br>
+
+            One way to think about the Gamma function is as a way to extend <br>
+            the factorial function to real and complex numbers. For example, <br>
+            if we take z to be a positive integer, then the integral reduces <br>
+            to a sum and we get:<br>
+            Γ(n) = (n-1)!<br><br>
+
+            However, the Gamma function is defined for all complex numbers with <br>
+            a positive real part, not just positive integers.<br><br>
+
+            The Gamma function has many useful properties, including:
+        </p>
+        <ol>
+            <li>
+                Γ(z+1) = zΓ(z) for all z with positive real part. <br>
+                This is known as the recursion formula and allows <br>
+                us to calculate the value of the Gamma function for any complex number.
+            </li>
+            <li>
+                Γ(1) = 1 and Γ(1/2) = √(π). These values can be used <br>
+                to evaluate the Gamma function at other points.
+            </li>
+            <li>
+                The Gamma function satisfies the functional equation Γ(z+1) = zΓ(z). <br>
+                This means that we can use the Gamma function to extend the factorial <br>
+                function to non-integer values.
+            </li>
+        </ol>
+        <p>
+            The Gamma function is used in many areas of mathematics and physics, <br>
+            including probability theory, complex analysis, and number theory.<br><br>
+
+            For example, the Gamma function is used to define the beta function, <br>
+            which is a generalization of the binomial coefficient. The beta function can be written as:<br>            
+            B(x,y) = Γ(x)Γ(y) / Γ(x+y)
+            
+            The Gamma function is also used to define the Gaussian integral, <br>
+            which is the integral of the Gaussian function:<br>            
+            ∫(from -∞ to ∞) e^(-x^2) dx = √(π)
+            
+            In summary, the Gamma function is a mathematical function that <br>
+            extends the concept of factorials to real and complex numbers. <br>
+            It has many useful properties and is used in many areas of mathematics and physics.             
+        </p>       
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">A Fundamental Property of Gamma Function</h2>
+        <p>
+            One of the fundamental properties of the gamma function is its relationship with factorials. <br>
+            The gamma function of a positive integer n is equal to (n-1)!:<br>
+            Γ(n) = (n-1)!<br><br>
+
+            For example, Γ(4) = (4-1)! = 3! = 6.<br>
+            This means that we can use the gamma function to extend the concept of <br>
+            factorials to non-integer values. For instance, we can define 1/2! <br>
+            as Γ(3/2) and 1/3! as Γ(4/2), and so on.<br><br>
+
+            Another important property of the gamma function is its recurrence formula, <br>
+            which is a way to express the gamma function of n+1 in terms of the gamma function of n. <br>
+            The recurrence formula is:<br>
+            Γ(n+1) = nΓ(n)<br><br>
+
+            This formula can be used to calculate the gamma function of any positive number, <br>
+            by starting with Γ(1) = 1 and applying the recurrence formula repeatedly.<br><br>
+
+            For example, to calculate Γ(3), we first use Γ(2) = 1Γ(1) = 1 to get:<br>
+            Γ(3) = 2Γ(2) = 2<br><br>
+
+            We can also use the recurrence formula to derive the gamma function of non-integer values. <br>
+            For example, to calculate Γ(1/2), we can use Γ(3/2) = (1/2)Γ(1/2) to get:<br>
+            Γ(1/2) = 2√(π)<br><br>
+
+            So the gamma function is a powerful tool for extending the concept of <br>
+            factorials to non-integer values and for calculating the gamma function <br>
+            of any positive number using its recurrence formula.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Product of two Integrals</h2>
+        <p>
+            Product of two integrals refers to a mathematical property that allows <br>
+            us to express the product of two functions as a single integral.<br><br>
+
+            Suppose we have two functions, f(x) and g(x), defined over an interval [a, b]. <br>
+            The product of these two functions is given by f(x)g(x). We can express the <br>
+            product of these two functions as a single integral over the interval [a, b] <br>
+            using the following formula:                    <br>
+            ∫(from a to b) f(x)g(x) dx = ∫(from a to b) u(x) v'(x) dx<br><br>
+                    
+            where u(x) and v(x) are functions defined as:                    <br>
+            u(x) = f(x)<br>
+            v'(x) = g(x)<br><br>
+                    
+            To obtain the value of the integral, we first integrate v'(x) to obtain v(x):         <br>           
+            v(x) = ∫ g(x) dx<br><br>
+                    
+            Then, we substitute u(x) and v(x) into the integral formula to obtain:                <br>    
+            ∫(from a to b) f(x)g(x) dx = [u(x)v(x)](from a to b) - ∫(from a to b) u'(x) v(x) dx<br><br>
+                    
+            where u'(x) is the derivative of u(x) with respect to x.<br><br>
+                    
+            This formula is known as the integration by parts formula, <br>
+            and it is very useful in solving certain types of integrals.<br><br>
+                    
+            For example, suppose we want to evaluate the integral of x^2 * e^x over <br>
+            the interval [0, 1]. We can use the integration by parts formula as follows:      <br>              
+            Let u(x) = x^2 and v'(x) = e^x. Then, we have:                    <br>
+            u'(x) = 2x<br>
+            v(x) = e^x<br><br>
+                    
+            Substituting these values into the integration by parts formula, we get:      <br>              
+            ∫(from 0 to 1) x^2 e^x dx = [x^2 e^x](from 0 to 1) - ∫(from 0 to 1) 2x e^x dx<br><br>
+                    
+            Evaluating the first term, we get:                    <br>
+            [x^2 e^x](from 0 to 1) = (1^2 e^1) - (0^2 e^0) = e - 1<br><br>
+                    
+            For the second term, we use integration by parts again:            <br>        
+            Let u(x) = 2x and v'(x) = e^x. Then, we have:                    <br>
+            u'(x) = 2<br>
+            v(x) = e^x<br><br>
+                    
+            Substituting these values into the integration by parts formula, we get:         <br>          
+            ∫(from 0 to 1) 2x e^x dx = [2x e^x](from 0 to 1) - ∫(from 0 to 1) 2 e^x dx<br><br>
+                    
+            Evaluating the first term, we get:   <br>                 
+            [2x e^x](from 0 to 1) = (12 e^1) - (02 e^0) = 2e - 0<br><br>
+                    
+            For the second term, we simply evaluate the integral:      <br>              
+            ∫(from 0 to 1) 2 e^x dx = [2 e^x](from 0 to 1) = 2e - 2<br><br>
+                    
+            Substituting all the values back into the original integral, we get:    <br>                
+            ∫(from 0 to 1) x^2 e^x dx = e - 1 - (2e - 2) = 3 - e
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Value of Γ( 1/2)</h2>
+        <p>
+            The value of Γ(1/2) is equal to the square root of pi (√π).  <br><br>
+
+            To understand this, let's first recall that the gamma function is defined as:        <br>            
+            Γ(z) = ∫(from 0 to infinity) t^(z-1) e^(-t) dt<br><br>
+
+            Now, let's substitute z=1/2 into this formula to find Γ(1/2):<br>
+            Γ(1/2) = ∫(from 0 to infinity) t^(-1/2) e^(-t) dt<br><br>
+
+            We can simplify this integral by making the substitution u = √t, <br>
+            which implies du/dt = 1/(2√t) and dt = 2u du. Making this substitution, we get:<br>
+            Γ(1/2) = 2∫(from 0 to infinity) e^(-u^2) du<br><br>
+
+            Now, let's consider the square of Γ(1/2), which is given by Γ^2(1/2). <br>
+            We can express this as a double integral:<br>
+            Γ^2(1/2) = ∫(from 0 to infinity) ∫(from 0 to infinity) x^(-1/2) y^(-1/2) e^(-x-y) dx dy<br><br>
+
+            We can simplify this double integral by making the substitution u = x+y and v = x-y, <br>
+            which implies x = (u+v)/2 and y = (u-v)/2. We can also express the product x*y as (u^2-v^2)/4. <br>
+            Using these substitutions, we get:<br>
+            Γ^2(1/2) = ∫(from 0 to infinity) ∫(from -u to u) e^(-u^2 + v^2) (1/4) u^(-1/2) (1/4) (u^2 - v^2)^(-1/2) dv du<br><br>
+
+            We can simplify the inner integral by making the substitution w = v/u, <br>
+            which implies dv = u dw, and changing the limits of integration to -1 to 1. This gives:<br>
+            Γ^2(1/2) = (1/4) ∫(from 0 to infinity) e^(-u^2) u^(-1/2) ∫(from -1 to 1) (u^2 - u^2 w^2)^(-1/2) dw du<br><br>
+
+            The inner integral can be recognized as the integral representation of the beta function, <br>
+            which we can evaluate to get:<br>
+            Γ^2(1/2) = (1/4) ∫(from 0 to infinity) e^(-u^2) u^(-1/2) π^(1/2) du<br><br>
+
+            Using the definition of the gamma function, we can express this integral as Γ(1/2) * Γ(1/2+1/2), <br>
+            which simplifies to Γ^2(1/2) = (π)^(1/2). Taking the square root of both sides, we get:<br>
+            Γ(1/2) = √π<br><br>
+
+            Therefore, we have shown that the value of Γ(1/2) is equal to the square root of pi (√π).
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Beta Function</h2>
+        <p>
+            The Beta function, denoted by B(x,y), is a function that helps us to evaluate certain types of integrals. <br>
+            The Beta function is defined as:<br>
+            B(x,y) = ∫(from 0 to 1) t^(x-1) (1-t)^(y-1) dt<br><br>
+
+            Here, x and y are positive real numbers. The Beta function is symmetric, which means that B(x,y) = B(y,x).<br><br>
+
+            We can think of the Beta function as a way to measure the ratio of two gamma functions. In particular, we have:<br>
+            B(x,y) = Γ(x) Γ(y) / Γ(x+y)<br>
+            where Γ(x) is the Gamma function.<br><br>
+
+            One important property of the Beta function is that it satisfies the recurrence relation:<br>
+            B(x+1,y) = (x/y) B(x,y+1)<br><br>
+
+            This means that we can use the Beta function to compute values for other values of x and y. <br>
+            For example, if we know B(2,2), we can use the recurrence relation to find B(3,2) or B(2,3).<br><br>
+
+            One special value of the Beta function is B(1/2,1/2), which can be computed using a substitution t = sin^2(u):<br>
+            B(1/2,1/2) = ∫(from 0 to π/2) sin^0(u) cos^0(u) du = π/2<br><br>
+
+            This value of the Beta function is particularly important in probability theory, <br>
+            where it is used to compute the normalizing constant of the beta distribution.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Relation between beta and gamma function</h2>
+        <p>
+            The beta function and the gamma function are closely related to each other. <br>
+            In fact, the beta function can be expressed in terms of the gamma function. <br>
+            The formula for the beta function is:<br>
+            B(x, y) = Γ(x)Γ(y) / Γ(x+y)<br><br>
+
+            where Γ(x) is the gamma function.<br><br>
+
+            Let's take a closer look at how this formula works. The beta function B(x, y) is defined as:<br>
+            B(x, y) = ∫(from 0 to 1) t^(x-1)(1-t)^(y-1) dt<br><br>
+
+            The gamma function Γ(x) is defined as:<br>
+            Γ(x) = ∫(from 0 to ∞) t^(x-1)e^(-t) dt<br><br>
+
+            Now, let's use integration by substitution to express the beta function in terms of the gamma function.<br> 
+            We'll start with the expression for the gamma function:<br>
+            Γ(x) = ∫(from 0 to ∞) t^(x-1)e^(-t) dt<br><br>
+
+            Let's substitute u = xt, which gives us:<br>
+            Γ(x) = ∫(from 0 to ∞) u^(x-1)e^(-u/x) (1/x) du<br><br>
+
+            Now, let's substitute v = u/(u+x), which gives us:<br>
+            Γ(x) = ∫(from 0 to 1) (xv)^(x-1) (1-xv)^(1/x - 1) x dv<br><br>
+
+            Notice that the integral is in the form of the beta function, with x and 1/x - 1 as the parameters:<br>
+            B(x, 1/x - 1) = ∫(from 0 to 1) t^(x-1)(1-t)^(1/x-2) dt<br><br>
+
+            So, we have:<br>
+            Γ(x) = x B(x, 1/x - 1)<br><br>
+
+            Now, we can use the definition of the beta function to express it in terms of the gamma function. We have:<br>
+            B(x, y) = ∫(from 0 to 1) t^(x-1)(1-t)^(y-1) dt<br><br>
+
+            Let's substitute u = t/(1-t), which gives us:<br>
+            B(x, y) = ∫(from 0 to ∞) u^(x-1) (1+u)^(-x-y) du<br><br>
+
+            Notice that the integral is in the form of the gamma function, with x as the parameter:<br>
+            Γ(x) = ∫(from 0 to ∞) t^(x-1)e^(-t) dt<br><br>
+
+            So, we have:<br>
+            B(x, y) = Γ(x)Γ(y) / Γ(x+y)<br><br>
+
+            This is the formula we started with, and we've shown how it can be derived using integration by substitution.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration of sin^2m−1 θ cos^2n−1 θ</h2>
+        <p>
+            The integral of sin^(2m-1)(θ)cos^(2n-1)(θ) is a bit complicated, <br>
+            but it can be solved using a technique called the reduction formula.<br><br>
+
+            Here are the steps to solve this integral:<br>
+            Step 1: Use the identity sin^2(θ) + cos^2(θ) = 1 to write sin^(2m)(θ) as (1-cos^2(θ))^m and cos^(2n)(θ) as (1-sin^2(θ))^n.<br><br>
+
+            Step 2: Multiply the two expressions, and use the binomial theorem to expand the product. <br>
+            You will end up with a sum of terms of the form sin^(2p)(θ)cos^(2q)(θ), <br>
+            where p and q are integers that satisfy p+q=m+n-2.<br><br>
+
+            Step 3: Use the reduction formula, which states that the integral of sin^(2p)(θ)cos^(2q)(θ) <br>
+            can be expressed in terms of the integral of sin^(2p-2)(θ)cos^(2q)(θ) or sin^(2p)(θ)cos^(2q-2)(θ). <br>
+            This formula can be derived by using integration by parts.<br><br>
+
+            Step 4: Use the reduction formula repeatedly to express the integral of sin^(2m-1)(θ)cos^(2n-1)(θ) in <br>
+            terms of integrals of sin^(2p)(θ)cos^(2q)(θ) with p and q smaller than m and n, respectively.<br><br>
+
+            Step 5: Eventually, you will end up with integrals of the form sin(θ)cos^(2q)(θ) or cos(θ)sin^(2p)(θ), <br>
+            which can be easily solved using substitution or integration by parts.<br><br>
+
+            For example, let's say we want to find the integral of sin^(3)(θ)cos^(3)(θ). Using the steps above, we have:<br>
+            sin^(3)(θ)cos^(3)(θ) = sin^(2)(θ)cos^(2)(θ)sin(θ)cos(θ)<br>
+            = (1-sin^(2)(θ))(1-cos^(2)(θ))sin(θ)cos(θ)<br>
+            = sin(θ)cos(θ) - sin^(3)(θ)cos^(2)(θ) - sin^(2)(θ)cos^(3)(θ) + sin^(3)(θ)cos^(3)(θ)<br><br>
+
+            The integral of sin(θ)cos(θ) can be easily found using substitution (let u = sin(θ)). <br>
+            The integral of sin^(3)(θ)cos^(2)(θ) can be expressed in terms of the integral of sin(θ)cos^(2)(θ) <br>
+            using the reduction formula. Similarly, the integral of sin^(2)(θ)cos^(3)(θ) can be expressed in <br>
+            terms of the integral of cos(θ)sin^(2)(θ). Eventually, we end up with integrals that can be easily <br>
+            solved using substitution or integration by parts.<br><br>
+
+            In summary, the integral of sin^(2m-1)(θ)cos^(2n-1)(θ) can be solved using the reduction formula <br>
+            and a series of substitutions and integration by parts. The process can be a bit lengthy and complicated, <br>
+            but it is a powerful tool for solving a wide range of integrals involving trigonometric functions.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Double integrals</h2>
+        <p>
+            A double integral is a type of integral that involves integrating a function <br>
+            over a two-dimensional region, instead of just a one-dimensional interval as <br>
+            in a regular integral. Double integrals are useful in many areas of math and <br>
+            science, such as calculating areas, volumes, and averages.<br><br>
+
+            To calculate a double integral, you need to integrate a function f(x, y) over <br>
+            a region in the xy-plane. The region can be any shape, such as a rectangle, a <br>
+            circle, or a more complicated shape. The double integral is written as:<br>
+            ∫∫f(x, y)dA<br><br>
+
+            where the integral sign (∫) indicates that we are integrating over the region, <br>
+            dA is the area element, and the limits of integration determine the boundaries of the region.<br><br>
+
+            The limits of integration are usually written as:<br>
+            a ≤ x ≤ b<br><br>
+
+            c(x) ≤ y ≤ d(x)<br><br>
+
+            where a and b are constants that determine the horizontal boundaries of the region, <br>
+            and c(x) and d(x) are functions that determine the vertical boundaries of the region.<br><br>
+
+            To evaluate a double integral, you first need to set up the limits of integration and <br>
+            then perform the integrals in the appropriate order. There are two possible orders: <br>
+            integrating with respect to x first, then y (called the "x-first" order), or integrating <br>
+            with respect to y first, then x (called the "y-first" order).<br><br>
+
+            Here's an example to illustrate how to evaluate a double integral:<br>
+            Suppose we want to calculate the volume of the region bounded by the planes             <br>
+            x = 0, y = 0, z = 0, and x + y + z = 1. We can set up the double integral as follows:<br>
+            ∫∫f(x, y)dA<br><br>
+
+            where f(x, y) = 1 - x - y, since z = 1 - x - y.<br>
+            The limits of integration are:<br>
+            0 ≤ x ≤ 1 - y - z<br>
+            0 ≤ y ≤ 1 - x - z<br><br>
+
+            We can choose to integrate with respect to x first, then y, or with respect to y first, <br>
+            then x. Let's integrate with respect to x first:<br>
+            ∫0^1- y - z ∫0^1 - x - z (1 - x - y)dxdy<br><br>
+
+            = ∫0^1- y - z [(1 - x - y)x]0^1 - x - zdzdy<br>
+            = ∫0^1 ∫0^1 - y - z (1 - x - y)x dxdy - ∫0^1 ∫0^1 - y - z yx dxdy<br>
+            = 1/24<br><br>
+
+            So the volume of the region is 1/24 cubic units.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">limit of integration for ∫∫ f(x, y) dx dy</h2>
+        <p>
+            When we talk about a double integral ∫∫ f(x, y) dx dy, the limit of integration <br>
+            refers to the range of values that x and y can take while evaluating the integral.<br><br>
+
+            The limits of integration are typically specified by a region in the xy-plane, <br>
+            which represents the area over which we want to integrate the function f(x, y). <br>
+            This region can be a rectangle, a triangle, a circle, or any other shape.<br><br>
+
+            To specify the limits of integration, we need to determine the minimum and maximum <br>
+            values of x and y that correspond to the boundaries of the region.<br><br>
+
+            For example, let's consider the double integral of the function f(x, y) = x + y over <br>
+            the triangular region defined by the vertices (0,0), (1,0), and (0,1). To evaluate this integral, <br>
+            we need to determine the limits of integration for x and y.<br><br>
+
+            Since the region is a triangle, we can choose either x or y as the first variable of integration. <br>
+            Let's choose x as the first variable of integration. The minimum and maximum values of x are 0 and 1, <br>
+            respectively, which correspond to the left and right boundaries of the triangle.<br><br>
+
+            For each value of x, the limits of integration for y are given by the lines that bound the triangle. <br>
+            The lower boundary is y = 0, and the upper boundary is y = 1 - x. Therefore, the limits of <br>
+            integration for y are 0 and 1 - x.<br><br>
+
+            Putting it all together, we can write the double integral as:<br>
+            ∫∫ f(x, y) dx dy = ∫[0,1] ∫[0,1-x] (x + y) dy dx<br><br>
+
+            This means that we first integrate the function with respect to y from 0 to 1-x, and then <br>
+            integrate the result with respect to x from 0 to 1.<br><br>
+
+            In general, determining the limits of integration for a double integral can be a bit more complicated, <br>
+            especially if the region is not a simple geometric shape. However, the basic idea is the same: <br>
+            we need to identify the boundaries of the region and determine the range of values for each variable <br>
+            that corresponds to those boundaries.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Area by double inegration</h2>
+        <p>
+            Suppose you have a flat piece of land that is shaped like a funny polygon, <br>
+            and you want to know how much area it covers. One way to do this is to use <br>
+            double integration.<br><br>
+
+            To do this, imagine the land is a flat sheet of paper, and you have a really <br>
+            tiny pen that can draw lines that are so small you can barely see them. Now, <br>
+            you draw a bunch of tiny squares on the land, like a grid. Each square has a <br>
+            width of Δx and a height of Δy.<br><br>
+
+            Next, you measure the height of the land at the bottom left corner of each <br>
+            square. Let's call that height f(x,y).<br><br>
+
+            Then, you can calculate the area of each tiny square by multiplying the <br>
+            width and height: ΔA = Δx * Δy.<br><br>
+
+            Finally, to find the total area of the land, you add up the areas of all <br>
+            the tiny squares. This can be done using double integration:<br>
+            Area = ∫∫ f(x,y) dxdy<br><br>
+
+            The limits of integration depend on the shape of the land. For example, <br>
+            if the land is a rectangle with sides of length a and b, the limits of integration would be:<br>
+            x = 0 to a<br>
+            y = 0 to b<br><br>
+
+            If the land is a triangle with vertices at (0,0), (a,0), and (0,b), the limits of integration would be:<br>
+            x = 0 to a<br>
+            y = 0 to b - bx/a<br><br>
+
+            By using double integration, you can find the area of any shape, no matter how weird or complicated it is!
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Volume under a surface</h2>
+        <p>
+            Imagine you have a 3-dimensional shape, like a hill or a mountain. <br>
+            You can measure the height of the shape at different points using a <br>
+            ruler or a measuring tape. But how can you find the volume of the shape, <br>
+            which tells you how much space it takes up?<br><br>
+
+            One way to do this is by using double integration. Let's say we have a <br>
+            function f(x,y) that gives us the height of the shape at each point (x,y). <br>
+            To find the volume under the surface defined by this function, we can divide <br>
+            the shape into small pieces, like a bunch of tiny boxes, and add up the volume of each box.<br><br>
+
+            To do this, we first choose a region R in the xy-plane that contains the entire shape. <br>
+            This region will be the base of our boxes. We then divide this region into small rectangles,<br>
+             each with an area of ΔA. For each rectangle with center (x,y), we choose a height of f(x,y) <br>
+             and construct a box with a volume of f(x,y)ΔA. We add up the volume of all these boxes by using a double integral:<br>
+            V = ∬R f(x,y) dA<br><br>
+
+            where dA is the area element of each small rectangle, and the double integral means <br>
+            we need to integrate over the entire region R.<br><br>
+
+            By evaluating this double integral, we can find the volume under the surface defined by f(x,y). <br>
+            This method can be applied to any 3-dimensional shape, even if it has a complex surface.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Polar coordinates</h2>
+        <p>
+            Polar coordinates are a way of representing points in a plane using angles and distances. <br>
+            In polar coordinates, a point is represented by its distance from the origin <br>
+            (called the radial coordinate or radius) and the angle it makes with the positive x-axis <br>
+            (called the angular coordinate or polar angle).<br><br>
+
+            To evaluate a double integral in polar coordinates, we first need to express the integrand <br>
+            in terms of polar coordinates. This means we need to express x and y in terms of r and θ. <br>
+            This can be done using the following formulas:<br>
+            x = r cos θ<br>
+            y = r sin θ<br><br>
+
+            Once we have expressed the integrand in terms of r and θ, we can convert the limits of <br>
+            integration from rectangular coordinates to polar coordinates. The limits for r will <br>
+            typically be expressed in terms of a lower and upper bound, while the limits for θ will <br>
+            typically be expressed in terms of a starting and ending angle.<br><br>
+
+            The double integral in polar coordinates is then given by:<br>
+            ∫∫ f(x, y) dx dy = ∫∫ g(r, θ) r dr dθ<br><br>
+
+            where g(r, θ) is the polar form of the integrand and the limits of integration are <br>
+            expressed in terms of r and θ.<br><br>
+
+            To evaluate the integral, we first integrate with respect to r from the lower limit <br>
+            to the upper limit, and then integrate with respect to θ from the starting angle to <br>
+            the ending angle. This will give us the volume under the surface defined by the function <br>
+            f(x, y) in polar coordinates.<br><br>
+
+            Overall, polar coordinates provide a useful way of simplifying the evaluation of double <br>
+            integrals, especially for problems with circular symmetry.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Change from cartesian to Polar Coordinates</h2>
+        <p>
+            Cartesian coordinates are represented by a pair of numbers (x, y) that represent <br>
+            the distance along the x and y axes, respectively, from the origin (0, 0). <br>
+            Polar coordinates, on the other hand, represent a point (r, θ) in terms of a <br>
+            distance r from the origin and an angle θ that the line connecting the point <br>
+            and the origin makes with the positive x-axis.<br><br>
+
+            To change from Cartesian to polar coordinates, we use the following formulas:<br>
+            r = sqrt(x^2 + y^2)<br>
+            θ = arctan(y/x)<br><br>
+
+            Here, r represents the distance from the origin to the point (x, y), and θ represents <br>
+            the angle that the line connecting the point and the origin makes with the positive x-axis.<br><br>
+
+            Let's take an example to illustrate this concept. Suppose we want to convert the point <br>
+            (3, 4) from Cartesian to polar coordinates. We can use the formulas above to get:<br>
+            r = sqrt(3^2 + 4^2) = 5<br>
+            θ = arctan(4/3) = 53.13 degrees (or approximately 0.93 radians)<br><br>
+
+            Therefore, the point (3, 4) in Cartesian coordinates is equivalent to the point <br>
+            (5, 53.13°) (or (5, 0.93)) in polar coordinates.<br><br>
+
+            In the context of double integrals, changing from Cartesian to polar coordinates <br>
+            can simplify the integral if the region of integration is circular or has some <br>
+            radial symmetry. In this case, we can rewrite the integral in terms of polar <br>
+            coordinates and integrate over the radius and angle instead of x and y. <br>
+            The limits of integration will also need to be converted to polar coordinates.
+        </p>
+    </div>
+</body>
+</html>

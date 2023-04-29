@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nyay D.G.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="colored-section content-data">
+        <h1>Integration of Algebraic Rational Functions</h1>
+        <p>Integration of algebraic rational functions involves finding an expression for the <br>
+            antiderivative of a fraction that has polynomials in the numerator and denominator. <br>
+            Let's break this down step by step:
+        </p>
+        <ol>
+            <li>A polynomial is a mathematical expression made up of one or more terms involving <br>
+                variables and constants, where the variables are raised to non-negative integer powers. <br>
+                For example, x^2 + 3x - 4 is a polynomial in the variable x.
+            </li>
+            <li>
+                A rational function is a fraction where both the numerator and denominator are polynomials. <br>
+                For example, (2x^2 + 5x + 1)/(x^2 + 3x - 2) is a rational function.
+            </li>
+            <li>
+                The integration of a rational function involves finding an expression for the antiderivative <br>
+                (or indefinite integral) of the function. The antiderivative of a function f(x) is another <br>
+                function F(x) such that F'(x) = f(x), where F'(x) denotes the derivative of F(x) with respect to x.
+            </li>
+            <li>
+                To integrate a rational function, we first check if the denominator can be factored into linear factors, <br>
+                meaning factors of the form (ax+b). For example, x^2 + 3x - 2 can be factored into (x-1)(x+2). <br>
+                If the denominator cannot be factored, we cannot use the method of partial fractions.
+            </li>
+            <li>
+                If the denominator can be factored into linear factors, we can use the method of partial fractions <br>
+                to break up the rational function into simpler fractions that we can integrate. <br>
+                For example, we can write: <br>
+                <ul>
+                    <li>
+                        (2x^2 + 5x + 1)/(x^2 + 3x - 2) = A/(x-1) + B/(x+2) <br>
+                        where A and B are constants to be determined.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                To find A and B, we can clear the denominators and solve for the constants. <br>
+                In this example, we would multiply both sides by (x-1)(x+2) to get:
+                <ul>
+                    <li>
+                        2x^2 + 5x + 1 = A(x+2) + B(x-1) <br>
+                        We can then substitute x=1 and x=-2 to get two equations in two unknowns: <br>
+                        A - 3B = -5 <br>
+                        A + 3B = 9 <br>
+                        Solving for A and B gives A = 3/5 and B = -2/5.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Now we can substitute the expressions for A and B back into the partial fraction decomposition to get:
+                <ul>
+                    <li>
+                        (2x^2 + 5x + 1)/(x^2 + 3x - 2) = 3/5/(x-1) - 2/5/(x+2)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Finally, we can integrate each of the simpler fractions using the power rule for integration:
+                <ul>
+                    <li>
+                        ∫ 3/5/(x-1) dx = 3/5 ln|x-1| + C <br>
+                        ∫ -2/5/(x+2) dx = -2/5 ln|x+2| + C <br>
+                        where C is the constant of integration.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            So the final antiderivative of the original rational function is: <br>
+            ∫ (2x^2 + 5x + 1)/(x^2 + 3x - 2) dx = 3/5 ln|x-1| - 2/5 ln|x+2| + C
+        </p>
+        <p>Overall, the process of integrating algebraic rational functions involves <br>
+            breaking up the function into simpler fractions using the method of partial <br>
+            fractions, solving for the constants, and then integrating each of the simpler <br>
+            fractions using the power rule for integration.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Methods of Integration</h2>
+        <p>There are many methods of integration, <br>
+            but some of the most basic and commonly used methods are:
+        </p>
+        <ol>
+            <li>
+                <strong>Power Rule:</strong> The power rule states that if we have a function of the form f(x) = x^n, <br>
+                where n is any real number except for -1, then its antiderivative is given by <br>
+                F(x) = (x^(n+1))/(n+1) + C, where C is the constant of integration. <br><br>
+
+                Example: ∫ x^2 dx = (x^3)/3 + C
+            </li>
+            <li>
+                <strong>u-Substitution:</strong> u-substitution is a method of integration that involves making a <br>
+                substitution of variables to simplify the integrand. The basic idea is to choose a <br>
+                new variable u such that the integrand can be written in terms of u and its derivative du. <br>
+                Then we can replace the integrand in terms of u and integrate with respect to u. <br><br>
+
+                Example: ∫ 3x^2 sin(x^3) dx <br>
+                Let u = x^3, then du/dx = 3x^2 <br>
+                So the integral becomes: ∫ sin(u) du = -cos(u) + C <br>
+                Substituting back, we get: ∫ 3x^2 sin(x^3) dx = -cos(x^3) + C
+            </li>
+            <li>
+                <strong>Integration by Parts:</strong> Integration by parts is a method of integration that involves breaking <br>
+                the integrand into two parts and using the product rule for derivatives. <br>
+                The formula for integration by parts is ∫ u dv = uv - ∫ v du, where u and v are functions <br>
+                and du/dx = u' and dv/dx = v'. <br><br>
+
+                Example: ∫ x cos(x) dx <br>
+                Let u = x and dv = cos(x) dx, then du/dx = 1 and v = sin(x) <br>
+                Using the formula, we get: ∫ x cos(x) dx = x sin(x) - ∫ sin(x) dx = x sin(x) + cos(x) + C
+            </li>
+            <li>
+                Trigonometric Substitution: Trigonometric substitution is a method of integration that <br>
+                involves making a substitution of variables using trigonometric identities to simplify <br>
+                the integrand. The basic idea is to choose a new variable that makes the integrand a function <br>
+                of a standard trigonometric function. <br><br>
+                Example: ∫ (1+x^2)^(-3/2) dx <br>
+                Let x = tan(u), then dx/dt = sec^2(u) <br>
+                Using the trig identity 1 + tan^2(u) = sec^2(u), we get: ∫ (1+x^2)^(-3/2) dx = ∫ cos^3(u) du <br>
+                Using the reduction formula for cos^3(u), we get: ∫ cos^3(u) du = (3/4)sin(u) + (1/4)sin(3u) + C <br>
+                Substituting back, we get: ∫ (1+x^2)^(-3/2) dx = (3/4)sin(arctan(x)) + (1/4)sin(3arctan(x)) + C
+            </li>
+        </ol>
+        <p>
+            Overall, methods of integration involve finding an expression for the antiderivative of a function. <br>
+            The power rule is used for polynomials, u-substitution is used for simplifying the integrand, <br>
+            integration by parts is used for products of functions, and trigonometric substitution is used for <br>
+            functions involving trigonometric identities.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2>Partial Fractions</h2>
+        <p>Partial fractions is a method used to simplify complex rational functions by breaking them down <br>
+            into simpler fractions. The basic idea is to write a given fraction as a sum of simpler fractions <br>
+            whose denominators are factors of the original denominator.
+        </p>
+        <p>For example, let's say we have the fraction f(x) = (2x + 5)/(x^2 + 3x + 2). <br>
+            We want to express this fraction as a sum of simpler fractions. To do this, <br>
+            we factor the denominator: x^2 + 3x + 2 = (x+1)(x+2). Therefore, we can write: <br><br>
+            f(x) = (2x + 5)/((x+1)(x+2)) = A/(x+1) + B/(x+2) <br>
+            where A and B are constants we need to determine.
+        </p>
+        <p>
+            To solve for A and B, we can use a method called the "cover-up" method. <br>
+            We first set x = -1, which makes the second term (x+2) equal to 1. <br>
+            Then we multiply both sides of the equation by (x+1) and simplify: <br><br>
+
+            (2x + 5) = A(x+2) + B(x+1) <br>
+            Setting x = -1 gives: 7 = -A <br>
+            Setting x = -2 gives: -4 = -B <br><br>
+
+            Therefore, A = -7 and B = 4, so we can rewrite f(x) as: <br><br>
+
+            f(x) = -7/(x+1) + 4/(x+2) <br>
+            This is the partial fraction decomposition of f(x). <br>
+            This method can also be used for more complicated rational functions with higher <br>
+            degree polynomials in the denominator. By breaking down the fraction into simpler <br>
+            pieces, we can more easily integrate the function.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2>Non-repeated linear factors only in the denominator</h2>
+        <p>
+            When we have a rational function with a denominator that is a product of non-repeated linear <br>
+            factors, we can use partial fraction decomposition to break it down into simpler fractions.
+        </p>
+        <p>
+            Let's consider an example. Suppose we have the following rational function: <br>
+            f(x) = 5x + 2 / (x - 3)(x + 4) <br><br>
+                    
+            To decompose this rational function, we need to find constants A and B such that: <br>      
+            5x + 2 / (x - 3)(x + 4) = A / (x - 3) + B / (x + 4) <br><br>
+                    
+            To solve for A and B, we can multiply both sides by the common denominator (x - 3)(x + 4): <br>
+            5x + 2 = A(x + 4) + B(x - 3) <br><br>
+                    
+            Now, we can solve for A and B by choosing appropriate values of x: <br>
+                    
+            If we set x = 3, the second term on the right side becomes zero, so we get: <br>
+            5(3) + 2 = A(3 + 4) + B(3 - 3) <br>
+                    
+            17 = 7A <br>
+                    
+            A = 17/7 <br><br>
+                    
+            If we set x = -4, the first term on the right side becomes zero, so we get: <br>
+            5(-4) + 2 = A(-4 + 4) + B(-4 - 3) <br>
+                    
+            -18 = -7B <br>
+                    
+            B = 18/7 <br><br>
+                    
+            Therefore, we have: <br>
+            5x + 2 / (x - 3)(x + 4) = 17/7 / (x - 3) + 18/7 / (x + 4) <br>
+                    
+            This is the partial fraction decomposition of f(x). <br>
+            Using this decomposition, we can now integrate the original rational function more easily.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Linear or quadratic non-repeated linear factor</h2>
+        <p>
+            When we have a rational function with a denominator that is a product of <br>
+            non-repeated linear factors, including linear or quadratic factors, <br>
+            we can use partial fraction decomposition to simplify the function. <br><br>
+
+            Let's consider an example. Suppose we have the following rational function: <br>
+            f(x) = 2x^2 + 5x + 3 / (x + 1)(x^2 + 4x + 3) <br><br>
+
+            Here, the denominator is a product of a linear factor (x + 1) and a <br>
+            quadratic factor (x^2 + 4x + 3).<br><br>
+        
+            To decompose this rational function, we need to find constants A, B, and C such that:<br>
+            2x^2 + 5x + 3 / (x + 1)(x^2 + 4x + 3) = A / (x + 1) + B(x + 1) / (x^2 + 4x + 3)<br><br>
+
+            To solve for A, B, and C, we can multiply both sides by the common denominator (x + 1)(x^2 + 4x + 3):<br>
+            2x^2 + 5x + 3 = A(x^2 + 4x + 3) + B(x + 1)^2<br><br>
+
+            Now, we can solve for A and B by choosing appropriate values of x:<br>
+            If we set x = -1, the second term on the right side becomes zero, so we get:<br>
+            2(-1)^2 + 5(-1) + 3 = A((-1)^2 + 4(-1) + 3)<br>
+            0 = -2A<br>
+            A = 0<br><br>
+
+            If we set x = 0, the second term on the right side becomes zero, so we get:<br>
+            2(0)^2 + 5(0) + 3 = B(0 + 1)^2<br>
+            3 = B<br><br>
+
+            Therefore, we have:<br>
+            2x^2 + 5x + 3 / (x + 1)(x^2 + 4x + 3) = 0 / (x + 1) + 3(x + 1) / (x^2 + 4x + 3)<br>
+            This is the partial fraction decomposition of f(x).<br><br>
+
+            Using this decomposition, we can now integrate the original rational function more easily.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration of (Lx+M)/(Ax2+2Bx+C)n where n is a positive integer different from 1</h2>
+         <p>
+            To integrate a rational function of the form (Lx+M)/(Ax^2+2Bx+C)^n, <br>
+            where n is a positive integer different from 1, we can use partial <br>
+            fraction decomposition and a technique called the method of completing the square. <br><br>
+
+            Let's consider an example. Suppose we want to integrate the following rational function:<br>
+            ∫ (3x + 2)/(x^2 + 2x + 3)^3 dx<br><br>
+
+            First, we need to decompose the function into partial fractions. <br>
+            To do this, we can use the general form:<br>
+            (3x + 2)/(x^2 + 2x + 3)^3 = A/(x^2 + 2x + 3) + B/(x^2 + 2x + 3)^2 + C/(x^2 + 2x + 3)^3<br><br>
+
+            To find the values of A, B, and C, <br>
+            we can multiply both sides by the common denominator (x^2 + 2x + 3)^3 and <br>
+            then simplify the resulting equation:<br>
+            3x + 2 = A(x^2 + 2x + 3)^2 + B(x^2 + 2x + 3) + C<br><br>
+
+            Next, we can use the method of completing the square to <br>
+            rewrite the quadratic expressions in the denominators as perfect squares:<br>
+            x^2 + 2x + 3 = (x + 1)^2 + 2<br><br>
+
+            Substituting this into the above equation, we get:<br>
+            3x + 2 = A[(x + 1)^2 + 2]^2 + B[(x + 1)^2 + 2] + C<br><br>
+
+            Now, we can solve for A, B, and C by substituting appropriate values of x. <br>
+            One way to do this is to choose values of x that will make some terms of the equation disappear.<br><br>
+
+            For example, <br>
+            if we substitute x = -1, then the term B[(x + 1)^2 + 2] disappears, and we get:<br>
+            3(-1) + 2 = A[(-1 + 1)^2 + 2]^2 + C<br>
+            -1 = 5A + C<br><br>
+
+            Similarly, if we substitute x = -1 ± i√2, <br>
+            then the terms A[(x + 1)^2 + 2]^2 and B[(x + 1)^2 + 2] disappear, and we get two equations:<br>
+            3(-1 ± i√2) + 2 = C<br><br>
+
+            Solving these equations simultaneously, we get:<br>
+            A = -1/10<br>
+            B = 7/20<br>
+            C = -3/20<br><br>
+
+            Therefore, we can write the original rational function as:<br>
+            (3x + 2)/(x^2 + 2x + 3)^3 = -1/10/(x^2 + 2x + 3) + 7/20/(x^2 + 2x + 3)^2 - 3/20/(x^2 + 2x + 3)^3<br><br>
+
+            Now, we can integrate each of these terms separately to obtain the final answer:<br>
+            ∫ -1/10/(x^2 + 2x + 3) dx = -1/10 arctan[(x+1)/√2] + C1<br>
+            ∫ 7/20/(x^2 + 2x + 3)^2 dx = -7/20 [1/(x+1) + (x+1)/(x^2 + 2x + 3)] + C2<br>
+            ∫ -3/20/(x^2 + 2x + 3)^3 dx = 3/40 [ln|x+1| - 2/(x+1) - (x+1)/(x^2 + 2x + 3)] + C3 <br><br>
+
+            where C1, C2, and C3 are constants of integration.<br>
+            Therefore, the final answer is:<br>
+            ∫ (3x + 2)/(x^2 + 2x + 3)^3 dx = -1/10 arctan[(x+1)/√2] - 7/20 [1/(x+1) + (x+1)/(x^2 + 2x + 3)] + 3/40 [ln|x+1| - 2/(x+1) - (x+1)/(x^2 + 2x + 3)] + C<br><br>
+
+            Note that the method of completing the square is only one of the many techniques <br>
+            that can be used to integrate rational functions. Depending on the specific form of the function, <br>
+            other techniques such as trigonometric substitutions or integration by parts may be more appropriate.
+         </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Reduction formula for ∫ 1/(y2+k2)n dx</h2>
+        <p>
+            The integral of 1/(y^2+k^2)^n can be reduced using a formula called the reduction formula. <br>
+            This formula helps us to simplify the integral for higher powers of n.<br><br>
+
+            The formula is as follows:<br>
+            ∫ 1/(y^2+k^2)^n dy = (-1/(2(k^2)(n-1))) [(1/(y^2+k^2)^(n-1)) + 2(n-2)∫ 1/(y^2+k^2)^(n-1) dy]<br><br>
+
+            Let's consider an example to understand how to use the reduction formula. <br>
+            Suppose we want to find the integral of:<br>
+            ∫ 1/(y^2+4)^3 dy<br><br>
+
+            Using the reduction formula, we can simplify this integral as follows:<br>
+            ∫ 1/(y^2+4)^3 dy = (-1/(2(4)(2))) [(1/(y^2+4)^(2)) + 2(2-2)∫ 1/(y^2+4)^(2) dy] + C<br><br>
+
+            Simplifying, we get:<br>
+            ∫ 1/(y^2+4)^3 dy = -1/32 [(1/(y^2+4)^(2)) + 2∫ 1/(y^2+4)^(2) dy] + C<br><br>
+
+            Now, we can use the reduction formula again to simplify the second integral:<br>
+            ∫ 1/(y^2+4)^2 dy = (-1/(2(4)(1))) [(1/(y^2+4)^(1)) + 2(1-1)∫ 1/(y^2+4)^(1) dy] + C<br><br>
+
+            Simplifying, we get:<br>
+            ∫ 1/(y^2+4)^2 dy = -1/8 [(1/(y^2+4)) + C]<br><br>
+
+            Substituting this value into the first integral, we get:<br>
+            ∫ 1/(y^2+4)^3 dy = -1/32 [(1/(y^2+4)^(2)) + 2(-1/8)] + C<br><br>
+
+            Simplifying, we get:<br>
+            ∫ 1/(y^2+4)^3 dy = -1/32 [(1/(y^2+4)^(2)) - 1/4] + C<br><br>
+
+            Therefore, we have found the integral of 1/(y^2+4)^3 using the reduction formula.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration of algebraic rational functions by substitution</h2>
+        <p>
+            Integration of algebraic rational functions by substitution is a technique used <br>
+            to simplify complex integrals. The idea behind this method is to substitute a part <br>
+            of the integral with a new variable, which will then help to simplify the rest of the integral.<br><br>
+
+            Let's consider an example to understand this method better. <br>
+            Suppose we want to integrate the following rational function:<br>
+            ∫ (x + 1) / (x^2 + 2x + 5) dx<br><br>
+
+            First, we can try to decompose the function into partial fractions, <br>
+            but in this case, it won't work since the quadratic in the denominator cannot be factored easily. <br>
+            Therefore, we need to use the substitution method to simplify the integral.<br><br>
+
+            We can start by considering the denominator of the rational function, <br>
+            x^2 + 2x + 5. To simplify this quadratic expression, we can complete <br>
+            the square by adding and subtracting 1, and then rewriting the expression as:<br>
+            x^2 + 2x + 5 = (x + 1)^2 + 4<br><br>
+
+            Now, we can substitute the expression in the denominator with a new variable, <br>
+            let's say u, where:<br>
+            u = x + 1<br><br>
+
+            Therefore, x = u - 1, and the integral becomes:<br>
+            ∫ (u - 1 + 1) / ((u - 1)^2 + 4 + 1) du<br><br>
+
+            Simplifying the integral, we get:<br>
+            ∫ (u - 1) / (u^2 + 4) du + ∫ 1 / (u^2 + 4) du<br><br>
+
+            The first integral can be evaluated using partial fraction decomposition, <br>
+            and the second integral can be evaluated using the arctan function. <br>
+            Therefore, the final answer is:<br>
+            (1/2) ln|u^2 + 4| + (1/2) arctan(u/2) + C<br><br>
+
+            Substituting the value of u, we get:<br>
+            (1/2) ln|(x + 1)^2 + 4| + (1/2) arctan(x/2 + 1) + C<br><br>
+
+            Therefore, we have successfully integrated the given rational function <br>
+            using the substitution method.<br>
+
+            In summary, to integrate algebraic rational functions by substitution, <br>
+            we need to identify a part of the integral that can be simplified using a new variable. <br>
+            Once we substitute the expression with a new variable, we can simplify the integral and <br>
+            then re-substitute the variable to get the final answer.
+        </p>
+    </div>
+</body>
+</html>

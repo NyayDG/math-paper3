@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nyay D.G.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Integration of Irrational Algebraic Functions</h2>
+        <p>
+            Integration of irrational algebraic functions involves finding the <br>
+            antiderivative of functions that cannot be expressed as a ratio of two polynomials, <br>
+            such as functions involving radicals or square roots.<br><br>
+
+            One common technique for integrating these types of functions is called substitution. <br>
+            The idea behind substitution is to make a change of variable that simplifies the integral, <br>
+            and then find the antiderivative of the resulting expression.<br><br>
+
+            For example, consider the integral:<br>
+            ∫ (x^2 + 1)^(3/2) dx<br><br>
+
+            We can use the substitution u = x^2 + 1, which simplifies the integral to:<br>
+            ∫ u^(3/2) du<br><br>
+
+            Now, we can integrate u^(3/2) using the power rule for integration:<br>
+            ∫ u^(3/2) du = (2/5)u^(5/2) + C<br><br>
+
+            Substituting back u = x^2 + 1, we get:<br>
+            ∫ (x^2 + 1)^(3/2) dx = (2/5)(x^2 + 1)^(5/2) + C<br><br>
+
+            Another technique for integrating irrational algebraic functions is to use <br>
+            trigonometric substitutions. This involves using trigonometric identities to <br>
+            convert the integral into a form that can be integrated using trigonometric functions.<br><br>
+
+            For example, consider the integral:<br>
+            ∫ (x^2 + 4)^(3/2) dx<br><br>
+
+            We can use the substitution x = 2tanθ, which simplifies the integral to:<br>
+            ∫ 16sec^4θ dθ<br><br>
+
+            Now, we can use the trigonometric identity sec^2θ = tan^2θ + 1 to rewrite the integrand as:<br>
+            16(sec^2θ + 1)^2 sec^2θ dθ<br><br>
+
+            Simplifying further using the identity 1 + tan^2θ = sec^2θ, we get:<br>
+            16(tan^2θ + 2)sec^4θ dθ<br><br>
+
+            Now, we can integrate using the substitution u = tanθ, which gives:<br>
+            ∫ 16(u^2 + 2)(1 + u^2) du<br><br>
+
+            Expanding and integrating term by term, we get:<br>
+            ∫ 16u^4 + 32u^2 + 16 du = (4/5)u^5 + (32/3)u^3 + 16u + C<br><br>
+
+            Substituting back u = tanθ and simplifying using trigonometric identities, we get:<br>
+            ∫ (x^2 + 4)^(3/2) dx = (8/15)(x^2 + 4)^(5/2) - 8x^2 + C<br><br>
+
+            Overall, integration of irrational algebraic functions requires careful <br>
+            application of substitution, trigonometric identities, and algebraic <br>
+            manipulations to simplify the integrand and find the antiderivative.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration of 1/√(ax2+bx+c)</h2>
+        <p>
+            Integration of 1/√(ax^2+bx+c): <br>
+            To integrate a function of the form 1/√(ax^2+bx+c), <br>
+            where a, b, and c are constants, we can use a technique called trigonometric substitution. <br>
+            This technique involves substituting the variable x with a trigonometric function <br>
+            such as sinθ or tanθ.<br><br>
+
+            Let's consider an example. Suppose we want to integrate the following function:<br>
+            ∫ 1/√(x^2 + 2x + 5) dx<br><br>
+
+            First, we need to complete the square in the denominator by adding and subtracting (b/2a)^2:<br>
+            x^2 + 2x + 5 = (x + 1)^2 + 4<br><br>
+
+            Substituting this into the original function, we get:<br>
+            ∫ 1/√((x + 1)^2 + 4) dx<br><br>
+
+            Next, we can substitute x + 1 with u to simplify the integration:<br>
+            ∫ 1/√(u^2 + 4) du<br><br>
+
+            Now, we can use the trigonometric substitution u = 2tanθ to get:<br>
+            ∫ 1/√(4tan^2θ + 4) * 2sec^2θ dθ<br><br>
+
+            Simplifying the expression inside the square root and canceling the 2, we get:<br>
+            ∫ 1/√(tan^2θ + 1) * sec^2θ dθ<br><br>
+
+            Using the identity sec^2θ = 1 + tan^2θ, we can rewrite the integrand as:<br>
+            ∫ 1/√(1 + tan^2θ) dθ<br><br>
+
+            This is the standard form of the integral of secθ. We can solve this using the <br>
+            inverse hyperbolic sine function:<br>
+            ∫ 1/√(ax^2 + bx + c) dx = ln|x + √(ax^2 + bx + c)|/√a + C
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2>Integration of √(ax2 + bx + c)</h2>
+        <p>
+            Integration of √(ax^2 + bx + c): <br>
+            To integrate a function of the form √(ax^2 + bx + c), <br>
+            where a, b, and c are constants, we can use a technique called completing the square. <br>
+            This technique involves rewriting the quadratic expression in the form (x + p)^2 + q.<br><br>
+
+            Let's consider an example. Suppose we want to integrate the following function:<br>
+            ∫ √(x^2 - 6x + 8) dx<br><br>
+
+            First, we need to complete the square in the expression inside the square root:<br>
+            x^2 - 6x + 8 = (x - 3)^2 - 1<br><br>
+
+            Substituting this into the original function, we get:<br>
+            ∫ √((x - 3)^2 - 1) dx<br><br>
+
+            Next, we can use the substitution u = x - 3 to simplify the integration:<br>
+            ∫ √(u^2 - 1) du<br><br>
+
+            Now, we can use the substitution u = secθ to get:<br>
+            ∫ √(sec^2θ - 1) * secθ tanθ dθ<br><br>
+
+            Simplifying the expression inside the square root using the identity sec^2θ - 1 = tan^2θ, we get:<br>
+            ∫ tan^2θ * secθ dθ<br><br>
+
+            Using the identity tan^2θ = sec^2θ - 1, we can rewrite the integrand as:<br>
+            ∫ (sec^3θ - secθ) dθ<br><br>
+
+            This is the standard form of the integral of sec^3θ. We can solve this using integration by parts:<br>
+            ∫ √(ax^2 + bx + c) dx <br>
+            = (1/2a) * (2bx + c) * √(ax^2 + bx + c) + (1/2√a) * ln|2ax + b + 2√a√(ax^2 + bx + c)| + C<br><br>
+
+            Note: C is the constant of integration and ln denotes the natural logarithm.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration of (px+q)/√(ax2 + bx + c)</h2>
+        <p>
+            To integrate a function of the form (px+q)/√(ax^2+bx+c), <br>
+            where a, b, c, p, and q are constants, <br>
+            we can use a technique called partial fraction decomposition. <br>
+            This technique involves breaking the fraction into simpler terms using algebraic manipulation.<br><br>
+
+            Let's consider an example. Suppose we want to integrate the following function:<br>
+            ∫ (3x + 4)/√(x^2 + 2x + 1) dx<br><br>
+
+            First, we need to factor the quadratic expression in the denominator:<br>
+            x^2 + 2x + 1 = (x + 1)^2<br><br>
+
+            Now, we can rewrite the integrand as a sum of two <br>
+            fractions using partial fraction decomposition:<br>
+            (3x + 4)/√(x^2 + 2x + 1) = A/(x + 1) + B/(x + 1)^(1/2)<br><br>
+
+            To solve for A and B, we can multiply both sides of the equation <br>
+            by the common denominator (x + 1)^(1/2)(x + 1) and simplify:<br>
+            (3x + 4) = A(x + 1)^(1/2) + B(x + 1)<br><br>
+
+            Setting x = -1, we can solve for A:<br>
+            A = (3(-1) + 4)/(2(-1)^(1/2)) = -1/2<br><br>
+
+            Setting x = 0, we can solve for B:<br>
+            B = (3(0) + 4)/(1^(1/2)) = 4<br><br>
+
+            Substituting A and B back into the partial fraction decomposition, we get:<br>
+            (3x + 4)/√(x^2 + 2x + 1) = -1/2/(x + 1)^(1/2) + 4/(x + 1)<br><br>
+
+            Now, we can integrate each term separately:<br>
+            ∫ -1/2/(x + 1)^(1/2) dx = -√(x + 1) + C1<br>
+            ∫ 4/(x + 1) dx = 4 ln|x + 1| + C2<br><br>
+
+            Combining the two integrals and simplifying, we get:<br>
+            ∫ (3x + 4)/√(x^2 + 2x + 1) dx = -√(x + 1) + 4 ln|x + 1| + C<br><br>
+
+            Where C is a constant of integration.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2>Integration of (c0xn+c1xn−1+· · ·+cn)√ax2 + bx + c </h2>
+        <p>
+            To integrate a function of the form (c0xn+c1xn−1+· · ·+cn)√ax2 + bx + c, <br>
+            where a, b, c, and the coefficients c0, c1, ..., cn are constants, <br>
+            we can use a technique called integration by parts.<br><br>
+
+            Integration by parts involves choosing two functions u and v such that <br>
+            the product u*v is equal to the integrand, and then applying the formula:<br>
+            ∫ u dv = uv − ∫ v du<br><br>
+
+            Let's consider an example. Suppose we want to integrate the following function:<br>
+            ∫ (2x^2 + 3x + 4)√(x^2 + x + 1) dx<br><br>
+
+            First, we can use the substitution u = x^2 + x + 1 to simplify the integration:<br>
+            ∫ (2x^2 + 3x + 4)√u * du / (2x + 1)<br><br>
+
+            Next, we can use integration by parts with u = √u and dv = (2x^2 + 3x + 4) / (2x + 1) dx. <br>
+            We choose u = √u because it is easier to differentiate than the polynomial in the integrand.<br><br>
+
+            Differentiating u with respect to u gives:<br>
+            du / dx = 1 / (2x + 1)<br><br>
+
+            Solving for dx, we get:<br>
+            dx = du / (2x + 1)<br><br>
+
+            Integrating dv with respect to x involves a bit of algebra. <br>
+            First, we can write the integrand as:<br>
+            (2x^2 + 3x + 4) / (2x + 1) = x + 2 + (2x - 2) / (2x + 1)<br><br>
+
+            We can integrate each term separately:<br>
+            ∫ x dx = 1/2 x^2 + C1<br>
+            ∫ 2 dx = 2x + C2<br>
+            ∫ (2x - 2) / (2x + 1) dx = ∫ (2 - 5 / (2x + 1)) dx = 2x - 5 ln|2x + 1| + C3<br><br>
+
+            Putting it all together, we get:<br>
+            ∫ (2x^2 + 3x + 4)√(x^2 + x + 1) dx = 2(x^2 + x + 1)√(x^2 + x + 1) + 4x√(x^2 + x + 1) - 5/2 ∫ √(x^2 + x + 1) dx + C<br><br>
+
+            Now we need to integrate √(x^2 + x + 1). We can use the substitution u = x + 1/2 to simplify the integration:<br>
+            ∫ √(x^2 + x + 1) dx = ∫ √((x + 1/2)^2 + 3/4) dx<br><br>
+
+            Next, we can use the substitution x + 1/2 = (sqrt(3)/2) tanθ to get:<br>
+            ∫ (sqrt(3)/2) sec^3θ dθ<br><br>
+
+            Using integration by parts with u = secθ and dv = sec^2θ dθ, we get:<br>
+            ∫ sec^3θ dθ = 1/2 (secθ tanθ + ln|secθ + tanθ|) + C4<br><br>
+
+            Substituting back and simplifying, we get:<br>
+            ∫ √(x^2 + x + 1) dx = (sqrt(3)/2) ln|x + 1/2 +(sqrt(3)/2) tan^-1((2x+1)/sqrt(3)) + C5<br><br>
+
+            Finally, substituting this expression back into the original integration by parts formula, we get:<br>
+            ∫ (2x^2 + 3x + 4)√(x^2 + x + 1) dx = 2(x^2 + x + 1)√(x^2 + x + 1) + 4x√(x^2 + x + 1) - 5/2 (sqrt(3)/2) ln|x + 1/2 + (sqrt(3)/2) tan^-1((2x+1)/sqrt(3))| + C<br><br>
+
+            So this is the final result of the integration. <br>
+            Integration by parts can be a little tricky, but with practice and careful attention to detail, <br>
+            it can be a powerful tool for solving complicated integrals.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration of 1/(Ax+B)√(Cx + D)</h2>
+        <p>
+            To integrate a function of the form 1/(Ax+B)√(Cx + D), <br>
+            where A, B, C, and D are constants, we can use a technique called substitution.<br><br>
+
+            First, we make the substitution u = Cx + D, which means that du/dx = C. <br>
+            We can rearrange this to get dx = du/C.<br><br>
+
+            Next, we substitute u into the integrand, giving us:<br>
+            ∫ 1/(Ax + B)√(Cx + D) dx = ∫ 1/(A(u-D)/C + B)√u du/C<br><br>
+
+            We can simplify the denominator of the fraction inside the integral using algebra:<br>
+            A(u-D)/C + B = (Au - AD + BC)/C = A(u - B/C) + (BC - AD)/C<br><br>
+
+            We can then use a partial fraction decomposition to rewrite <br>
+            the integrand as a sum of simpler fractions. Specifically, we can write:<br>
+            1/[(u - B/C) + (BC - AD)/AC] = A/√(AC^2(u-B/C)^2 + (BC-AD)^2)<br><br>
+
+            Now we can substitute this back into the integral:<br>
+            ∫ 1/(Ax + B)√(Cx + D) dx = ∫ A/√(AC^2(u-B/C)^2 + (BC-AD)^2) du/C<br><br>
+
+            We can simplify the constant A/C to get:<br>
+            1/C ∫ 1/√(AC^2(u-B/C)^2 + (BC-AD)^2) du<br><br>
+
+            Finally, we can use the substitution t = AC(u - B/C) to simplify the integration:<br>
+            1/C ∫ 1/√(AC^2(u-B/C)^2 + (BC-AD)^2) du = 1/(AC) ∫ 1/√(t^2 + (BC-AD)^2/AC^2) dt<br><br>
+
+            This last integral can be evaluated using a trigonometric substitution. <br>
+            Specifically, we can substitute t = (BC - AD)/AC tanθ, <br>
+            which means that dt = (BC - AD)/AC sec^2θ dθ. <br>
+            Substituting this back into the integral and simplifying, we get:<br>
+            1/(AC) ∫ 1/√(t^2 + (BC-AD)^2/AC^2) dt = 1/(BC - AD) ∫ secθ dθ<br><br>
+
+            Using the identity secθ = √(1 + tan^2θ), we can simplify this further to get:<br>
+            1/(BC - AD) ∫ secθ dθ = 1/(BC - AD) ln|secθ + tanθ| + C<br><br>
+
+            Substituting back for θ and t, we get:<br>
+            ∫ 1/(Ax + B)√(Cx + D) dx = 1/(BC - AD) ln|√(AC^2(x - B/C)^2 + (BC - AD)^2/AC^2) + (Cx - D)/AC| + C<br><br>
+
+            For example, let's suppose we want to integrate the function:<br>
+            ∫ 1/(2x + 3)√(3x + 4) dx<br><br>
+
+            We can use the formula derived above with A = 2, B = 3, C = 3, and D = 4:<br>
+            ∫ 1/(2x + 3)√(3x + 4) dx <br>
+            = 1/((3)(2) - (4)(2)) ln|√(2)(3)^2(x - (-3/2))^2 + <br>
+            (3)(4 - 2(3))^2/((3)(2) - (4)(2)) ln|√(36(x + 3/2)^2 + 4) + (3x - 4)/(2(3))| + C<br><br>
+
+            We can simplify this expression further:<br>
+            ∫ 1/(2x + 3)√(3x + 4) dx = -1/2 ln|√(36(x + 3/2)^2 + 4) + (3x - 4)/6| + C<br><br>
+
+            So, the antiderivative of the function 1/(2x + 3)√(3x + 4) is given by -1/2 ln|√(36(x + 3/2)^2 + 4) + (3x - 4)/6| + C.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Integration of 1/(ax2 + bx + c)√px + q</h2>
+        <p>
+            To integrate a function of the form 1/(ax^2 + bx + c)√(px + q), <br>
+             where a, b, c, p, and q are constants, we can use a technique called substitution.<br><br>
+
+            First, we make the substitution u = √(px + q), which means that du/dx = p/(2√(px + q)). <br>
+            We can rearrange this to get dx = 2u/(p) du.<br><br>
+
+            Next, we substitute u into the integrand, giving us:<br>
+            ∫ 1/(ax^2 + bx + c)√(px + q) dx = ∫ 1/(ax^2 + bx + c) u (p/(2u)) du<br><br>
+
+            We can simplify the denominator of the fraction inside the integral using algebra:<br>
+            ax^2 + bx + c = a(x^2 + (b/a)x + c/a)<br><br>
+
+            We can then complete the square in the denominator:<br>
+            x^2 + (b/a)x + c/a = (x + (b/2a))^2 - ((b/2a)^2 - c/a)<br><br>
+
+            So we get:<br>
+            ax^2 + bx + c = a(x + (b/2a))^2 - a((b/2a)^2 - c/a)<br><br>
+
+            We can use this to rewrite the integrand as:<br>
+            1/(ax^2 + bx + c) = √(a)/√(π(a(u^2 - ((b/2a)^2 - c/a))/p^2))<br><br>
+
+            Now we can substitute this back into the integral:<br>
+            ∫ 1/(ax^2 + bx + c)√(px + q) dx = ∫ √(a)/√(π(a(u^2 - ((b/2a)^2 - c/a))/p^2)) (p/(2u)) du<br><br>
+
+            We can simplify the constant p/√a to get:<br>
+            (1/√π) ∫ 1/√(u^2 - ((b/2a)^2 - c/a)) du<br><br>
+
+            Finally, we can use a trigonometric substitution. <br>
+            Specifically, we can substitute u = (b/2a) + (1/a)√(c/a) secθ, <br>
+            which means that du = (1/a)√(c/a) secθ tanθ dθ. <br><br>
+
+            Substituting this back into the integral and simplifying, we get:<br>
+            (1/√π) ∫ 1/√(u^2 - ((b/2a)^2 - c/a)) du = (1/√π) ∫ 1/√((b/2a)^2 + (c/a)tan^2θ) (1/a)√(c/a) secθ tanθ dθ<br><br>
+
+            Using the identity sec^2θ = 1 + tan^2θ, we can simplify this further to get:<br>
+            (1/√π) ∫ 1/√((b/2a)^2 + (c/a)tan^2θ) (1/a)√(c/a) secθ tanθ dθ = (1/√π) ∫ 1/√((b/2a)^2(c/a)sec^2θ + (c/a)) dθ<br><br>
+
+            Using the identity sec^2θ = 1/cos^2θ, we can simplify this further to get:<br>
+            (1/√π) ∫ 1/√((b/2a)^2/cos^2θ + c/a) dθ = (1/√π) ∫ 1/(cosθ/√((b/2a)^2cos^2θ + c/a)) dθ<br><br>
+
+            Now we can make a final substitution, letting t = (b/2a)cosθ. <br>
+            This means that dt/dθ = -(b/2a)sinθ, and we can solve for cosθ and substitute to get:<br>
+            cosθ = t/(b/2a), so sinθ = √((b/2a)^2 - t^2)/(b/2a)<br><br>
+
+            Substituting these back into the integral and simplifying, we get:<br>
+            (1/√π) ∫ 1/√((b/2a)^2cos^2θ + c/a) dθ = (1/√π) ∫ 1/√(t^2 + (b/2a)^2 - c/a) (-2a/b) (1/√((b/2a)^2 - t^2)) dt<br><br>
+
+            We can simplify the constant (-2a/b) to get:<br>
+            (2/√πb) ∫ 1/√(t^2 + (b/2a)^2 - c/a) (1/√((b/2a)^2 - t^2)) dt<br><br>
+
+            This integral can be evaluated using a trigonometric substitution or <br>
+            the substitution u = t/(b/2a) - √(c/a), which can be derived using the completing the square technique.<br><br>
+
+            Overall, the process involves making a substitution, <br>
+            simplifying the integrand using algebra and trigonometric identities,<br>
+             and then making further substitutions to simplify the integral. <br>
+             While the process may seem complex, with practice and understanding of the underlying concepts, <br>
+             it can become easier to follow and apply.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration by Rationalisation</h2>
+        <p>
+            Integration by rationalization is a technique used in calculus to simplify <br>
+            an integrand by multiplying the numerator and denominator of the fraction <br>
+            by a conjugate factor. The goal of this technique is to create a simpler <br>
+            form of the integrand that is easier to integrate.<br><br>
+
+            Here are the steps to integrate a function using rationalization:<br>
+        </p>
+        <ol>
+            <li>
+                Identify the integrand as a fraction with a radical in the denominator. <br>
+                For example, consider the following integral:<br>
+                ∫ (1/√(x+1)) dx
+            </li>
+            <li>
+                Multiply both the numerator and denominator of the fraction by the conjugate of the denominator. <br>
+                The conjugate is found by changing the sign between the terms in the denominator. <br>
+                For example, the conjugate of √(x+1) is √(x+1). Therefore, <br>
+                we multiply both the numerator and denominator of the fraction by √(x+1):<br>
+                ∫ (1/√(x+1)) dx = ∫ (1/√(x+1)) * (√(x+1)/√(x+1)) dx<br>
+                = ∫ √(x+1)/(x+1) dx<br>
+            </li>
+            <li>
+                Simplify the integrand as much as possible. In this case, <br>
+                we can use a substitution to simplify the integral:<br>
+                Let u = x+1. Then du/dx = 1, and dx = du. Substituting this into the integral gives:<br>
+                ∫ √(x+1)/(x+1) dx = ∫ √u/u du<br>
+            </li>
+            <li>
+                Integrate the simplified integral. In this case, <br>
+                we can use a u-substitution to solve the integral:<br>
+                Let v = √u, then dv/du = 1/(2√u), and du = 2v dv. Substituting this into the integral gives:<br>
+
+                ∫ √u/u du = ∫ v * (2v dv) = 2∫ v^2 dv = 2(v^3/3) + C<br>
+            </li>
+            <li>
+                Substitute back to the original variable. In this case, substituting back u = x+1 gives:<br>
+                2(√(x+1))^3/3 + C
+            </li>
+        </ol>
+        <p>
+            So the final answer is: <br>
+            ∫ (1/√(x+1)) dx = 2(√(x+1))^3/3 + C<br><br>
+
+            That's how you use integration by rationalization to simplify and solve an integral.
+        </p>      
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Integration of x^m(a+bx^n)^p, where m, n and p are not necessarily integers</h2>
+        <p>
+            To integrate a function of the form x^m(a+bx^n)^p, <br>
+            where m, n, and p are not necessarily integers, <br>
+            we can use a technique called substitution.<br><br>
+
+            First, we make the substitution u = a + bx^n. <br>
+            This means that du/dx = n(bx^(n-1)) and dx = du/(n(bx^(n-1))).<br><br>
+
+            Next, we substitute u into the integrand, giving us:<br>
+            ∫ x^m(a+bx^n)^p dx = ∫ x^m(u)^p dx/(n(bx^(n-1)))<br><br>
+
+            We can simplify the denominator of the fraction inside the integral using algebra:<br>
+            x^(n-1) = (x^n)/x<br><br>
+
+            So we get:<br>
+            ∫ x^m(a+bx^n)^p dx = (1/n) ∫ (u)^p x^(m-n+1) du<br>
+            Now we can use another substitution v = x^n. This means that dv/dx = nx^(n-1) and dx = dv/(nx^(n-1)).<br><br>
+
+            Substituting this back into the integral, we get:<br>
+            (1/n) ∫ (u)^p x^(m-n+1) du = (1/n) ∫ (u)^p v^((m-n+1)/n) dv<br><br>
+
+            We can simplify the constant (1/n) to get:<br>
+            (1/n) ∫ (u)^p v^((m-n+1)/n) dv = (1/(n(m+1))) ∫ (u)^p v^(m/n+1) (m+1)dv<br><br>
+
+            Finally, we can substitute back to get:<br>
+            (1/(n(m+1))) ∫ (u)^p v^(m/n+1) (m+1)dv = (1/(n(m+1))) ∫ (a+bx^n)^p x^(m+1) dx<br><br>
+
+            This form can then be integrated using standard techniques.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Reduction formulae for ∫x^m(a+bx^n)^p dx</h2>
+        <p>
+            Reduction formulae are a technique used in integration to simplify <br>
+            the integration of functions that have similar forms. In the case <br>
+            of ∫x^m(a+bx^n)^p dx, where m, n, a, b, and p are constants, <br>
+            reduction formulae can be used to integrate this type of function for any value of p.<br><br>
+
+            The basic idea behind reduction formulae is to use integration by parts repeatedly <br>
+            to simplify the expression, until we are left with an integral that we can solve directly. <br>
+            The formula involves finding a general formula for the integral of a function, <br>
+            and then using that formula to reduce the integral of a similar function to a simpler form.<br><br>
+
+            To derive the reduction formula for ∫x^m(a+bx^n)^p dx, <br>
+            we first use integration by parts to split the integrand into two parts:<br>
+            ∫x^m(a+bx^n)^p dx = x^m (a+bx^n)^p - ∫(px^n)(a+bx^n)^(p-1) (mx^(m-1)) dx<br><br>
+
+            We can then simplify the second integral by using another integration by parts:<br>
+            ∫x^m(a+bx^n)^p dx = x^m (a+bx^n)^p - (px^n/m) x^(m+1) (a+bx^n)^(p-1) + (p(p-1)x^(2n+m-1))/(m(m+1)) ∫x^m (a+bx^n)^(p-2) dx<br><br>
+
+            This is the reduction formula for ∫x^m(a+bx^n)^p dx. <br>
+            We can use this formula to reduce the integral of a function with a similar form to a simpler form, <br>
+            until we are left with an integral that we can solve directly.<br><br>
+
+            For example, let's say we want to find the integral of ∫x^3(1+x^2)^2 dx. <br>
+            We can use the reduction formula above to simplify this integral as follows:<br>
+            ∫x^3(1+x^2)^2 dx = x^3(1+x^2)^2 - (2x^5/3)(1+x^2) + (2(2-1)x^7)/(3(4)) ∫(1+x^2)^0 dx<br>
+            = x^3(1+x^2)^2 - (2x^5/3)(1+x^2) + (x^7/6) + C<br><br>
+
+            So the integral of ∫x^3(1+x^2)^2 dx is x^3(1+x^2)^2 - (2x^5/3)(1+x^2) + (x^7/6) + C, <br>
+            where C is the constant of integration.<br><br>
+
+            Note that the reduction formula can be applied recursively to obtain <br>
+            a general formula for the integral of any positive integer power of (a+bx^n), <br>
+            which can be used to solve a wide range of integration problems.
+        </p>
+    </div>
+</body>
+</html>

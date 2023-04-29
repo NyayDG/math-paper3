@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nyay D.G.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Integration of Transcendental Functions</h2>
+        <p>
+            Reduction formulas are techniques that allow us to reduce the power <br>
+            of a trigonometric function in an integral by using integration by parts. <br>
+            The reduction formulas for sine and cosine are used when we need to integrate <br>
+            expressions that contain high powers of trigonometric functions.<br><br>
+
+            Let's start with the reduction formula for ∫sin(mx)dx, where m is a positive integer.<br>
+            We begin by using integration by parts:<br>
+            ∫sin(mx)dx = -cos(mx)/m + (1/m)∫cos(mx)dx<br><br>
+            
+            Now, we can use the reduction formula for ∫cos(nx)dx, where n is a positive integer.<br>
+            The reduction formula for ∫cos(nx)dx is:<br>
+            ∫cos(nx)dx = sin(nx)/n + (1/n)∫sin(nx)dx<br><br>
+            
+            We can substitute this into our previous equation:<br>
+            ∫sin(mx)dx = -cos(mx)/m + (1/m)(sin(nx)/n + (1/n)∫sin(nx)dx)<br><br>
+            
+            We can simplify this equation to get:<br>
+            (1/mn)(-cos(mx) + (n/m)sin(nx) + ∫sin(mx)dx)<br><br>
+            
+            Now, we have an integral with a lower power of sine. <br>
+            We can use this reduction formula repeatedly to reduce the power of <br>
+            sine until we have an integral that we can easily evaluate.<br>
+            Similarly, we can derive the reduction formula for ∫cos(nx)dx as follows:<br>            
+            ∫cos(nx)dx = sin(nx)/n + (1/n)∫sin(nx)dx<br><br>
+            
+            Using the reduction formula for ∫sin(mx)dx that we derived earlier, <br>
+            we can substitute ∫sin(mx)dx in the above equation:                       <br>
+            ∫cos(nx)dx = sin(nx)/n + (1/n)(-cos(mx)/m + (1/m)(sin(nx)/n + (1/n)∫sin(mx)dx))<br><br>
+            
+            We can simplify this to get:<br>            
+            (1/mn)(sin(nx) - (m/n)cos(mx) + ∫cos(nx)dx)<br><br>
+            
+            Again, we can use this reduction formula repeatedly to reduce <br>
+            the power of cosine until we have an integral that we can easily evaluate.<br><br>
+            
+            For example, let's use these reduction formulas to evaluate the integral ∫sin^3(x)dx:<br>            
+            ∫sin^3(x)dx = ∫sin(x)sin^2(x)dx<br><br>
+            
+            Using the reduction formula for ∫sin^2(x)dx, we get:<br>            
+            ∫sin^3(x)dx = ∫sin(x)(1 - cos^2(x))dx<br><br>
+            
+            Now, we can use integration by parts, letting u = cos(x) and dv = sin(x)dx:<br>            
+            ∫sin(x)(1 - cos^2(x))dx = -cos(x) + ∫cos^3(x)dx<br><br>
+            
+            Using the reduction formula for ∫cos^3(x)dx, we get:<br>            
+            ∫sin(x)(1 - cos^2(x))dx = -cos(x) + (1/3)cos^3(x) + C<br><br>
+            
+            Therefore, the solution to the integral ∫sin^3(x)dx is:<br>            
+            ∫sin^3(x)dx = -cos(x) + (1/3)cos^3(x) + C
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Reduction formula for ∫sin^mx dx cos^nx dx (where m and n are positive integers)</h2>
+        <p>
+            The reduction formula for ∫sin^m(x) cos^n(x) dx is a technique used to <br>
+            integrate expressions that contain both sine and cosine functions raised <br>
+            to positive integer powers.<br><br>
+
+            Let's start with the reduction formula for ∫sin^2(x)cos^n(x) dx, where n is a positive integer.<br>
+            We begin by using integration by parts:<br>
+            ∫sin^2(x)cos^n(x) dx = (-1/n)sin^2(x)cos^(n-1)(x) + (n-1)/n ∫sin^2(x)cos^(n-2)(x) dx<br><br>
+
+            Now, we can use the identity sin^2(x) = 1 - cos^2(x) to rewrite the integral:<br>
+            ∫sin^2(x)cos^n(x) dx = (-1/n)(cos^(n-1)(x) - cos^(n+1)(x))/(n+1) + (n-1)/n ∫cos^(n-2)(x) dx<br><br>
+
+            We can simplify this equation to get:<br>
+            ∫sin^2(x)cos^n(x) dx = (-1/n)(cos^(n-1)(x))/(n+1) + (n-1)/n ∫cos^(n-2)(x) dx - (1/(n+1)) ∫cos^(n+1)(x) dx<br><br>
+
+            Now, we have an integral with a lower power of sine and a higher power of cosine. <br>
+            We can use this reduction formula repeatedly to reduce the power of sine until <br>
+            we have an integral that we can easily evaluate.<br><br>
+
+            Similarly, we can derive the reduction formula for ∫sin^m(x)cos^n(x) dx by <br>
+            using the reduction formula for ∫sin^2(x)cos^n(x) dx that we just derived.<br><br>
+
+            For example, let's use these reduction formulas to evaluate the integral ∫sin^3(x)cos^2(x)dx:<br>
+            ∫sin^3(x)cos^2(x)dx = ∫sin(x)sin^2(x)cos^2(x)dx<br><br>
+
+            Using the reduction formula for ∫sin^2(x)cos^2(x)dx, we get:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)∫sin^3(x)dx - (1/2)∫sin(x)dx + (1/4)∫sin(x)sin^2(x)cos^2(x)dx<br><br>
+
+            Now, we can use the reduction formula for ∫sin^3(x)dx that we derived earlier, <br>
+            and the identity sin^2(x) = 1 - cos^2(x), to simplify the integral:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)(-cos(x) + (1/3)cos^3(x)) - (1/2)cos(x) + (1/4)∫cos^2(x)dx<br><br>
+
+            Using the reduction formula for ∫cos^2(x)dx, we get:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)(-cos(x) + (1/3)cos^3(x)) - (1/2)cos(x) + (1/8)(2x + sin(2x)) + C<br><br>
+
+            Therefore, the solution to the integral ∫sin^3(x)cos^2(x)dx is:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)(-cos(x) + (1/3)cos^3(x)) - (1/2)cos(x) + (1/8)(2x + sin(2x)) + C<br><br>
+
+            In summary, the reduction formula for ∫sin^m(x)cos^n(x) dx is a technique <br>
+            used to integrate expressions that contain both sine and cosine functions <br>
+            raised to positive integer powers. It involves using integration by parts <br>
+            and trigonometric identities to reduce the power of one of the functions <br>
+            until we have an integral that can be easily evaluated. We can then use <br>
+            this reduction formula repeatedly to further reduce the power of the remaining <br>
+            function until we arrive at a solution.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Reduction formula for ∫sin^mx cos^nx dx</h2>
+        <p>
+            The reduction formula for ∫sin^m(x) cos^n(x) dx is a technique used to <br>
+            integrate expressions that contain both sine and cosine functions raised <br>
+            to positive integer powers.<br><br>
+
+            Let's start with the reduction formula for ∫sin^2(x)cos^n(x) dx, <br>
+            where n is a positive integer.<br><br>
+
+            We begin by using integration by parts:<br>
+            ∫sin^2(x)cos^n(x) dx = (-1/n)sin^2(x)cos^(n-1)(x) + (n-1)/n ∫sin^2(x)cos^(n-2)(x) dx<br><br>
+
+            Now, we can use the identity sin^2(x) = 1 - cos^2(x) to rewrite the integral:<br>
+            ∫sin^2(x)cos^n(x) dx = (-1/n)(cos^(n-1)(x) - cos^(n+1)(x))/(n+1) + (n-1)/n ∫cos^(n-2)(x) dx<br><br>
+
+            We can simplify this equation to get:<br>
+            ∫sin^2(x)cos^n(x) dx = (-1/n)(cos^(n-1)(x))/(n+1) + (n-1)/n ∫cos^(n-2)(x) dx - (1/(n+1)) ∫cos^(n+1)(x) dx<br><br>
+
+            Now, we have an integral with a lower power of sine and a higher power of cosine. <br>
+            We can use this reduction formula repeatedly to reduce the power of sine until <br>
+            we have an integral that we can easily evaluate.<br><br>
+
+            Similarly, we can derive the reduction formula for ∫sin^m(x)cos^n(x) dx <br>
+            by using the reduction formula for ∫sin^2(x)cos^n(x) dx that we just derived.<br><br>
+
+            For example, let's use these reduction formulas to evaluate the integral ∫sin^3(x)cos^2(x)dx:<br>
+            ∫sin^3(x)cos^2(x)dx = ∫sin(x)sin^2(x)cos^2(x)dx<br><br>
+
+            Using the reduction formula for ∫sin^2(x)cos^2(x)dx, we get:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)∫sin^3(x)dx - (1/2)∫sin(x)dx + (1/4)∫sin(x)sin^2(x)cos^2(x)dx<br><br>
+
+            Now, we can use the reduction formula for ∫sin^3(x)dx that we derived earlier, <br>
+            and the identity sin^2(x) = 1 - cos^2(x), to simplify the integral:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)(-cos(x) + (1/3)cos^3(x)) - (1/2)cos(x) + (1/4)∫cos^2(x)dx<br><br>
+
+            Using the reduction formula for ∫cos^2(x)dx, we get:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)(-cos(x) + (1/3)cos^3(x)) - (1/2)cos(x) + (1/8)(2x + sin(2x)) + C<br><br>
+
+            Therefore, the solution to the integral ∫sin^3(x)cos^2(x)dx is:<br>
+            ∫sin^3(x)cos^2(x)dx = (1/4)(-cos(x) + (1/3)cos^3(x)) - (1/2)cos(x) + (1/8)(2x + sin(2x)) + C<br><br>
+
+            In summary, the reduction formula for ∫sin^m(x)cos^n(x) dx is a <br>
+            technique used to integrate expressions that contain both sine <br>
+            and cosine functions raised to positive integer powers. <br>
+            It involves using integration by parts and trigonometric identities <br>
+            to reduce the power of one of the functions until we have an integral <br>
+            that can be easily evaluated. We can then use this reduction formula <br>
+            repeatedly to further reduce the power of the remaining function until we arrive at a solution.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Integration of sin^mx cos^nx</h2>
+        <p>
+            To integrate an expression of the form sin^m(x)cos^n(x), <br>
+            where m and n are positive integers, we can use the reduction <br>
+            formula for integration of sin^mx cos^nx.<br><br>
+
+            Let's start with an example:<br>
+            ∫sin^3(x)cos^2(x)dx<br><br>
+                    
+            We can use the identity sin^2(x) = 1 - cos^2(x) to rewrite this expression as:<br>
+            ∫sin(x)(1-cos^2(x))cos^2(x)dx<br><br>
+                    
+            Next, we can use substitution:<br>
+            Let u = cos(x), then du/dx = -sin(x)dx<br>
+            So, dx = -du/sin(x)<br><br>
+                    
+            Now, we can rewrite the integral as:<br>
+            -∫(1-u^2)u^2/sqrt(1-u^2) du<br><br>
+                    
+            Using partial fractions decomposition, we can break this expression down into:<br>
+            -∫u^2/sqrt(1-u^2) du + ∫(1/2)(1-1/sqrt(1-u^2)) du<br><br>
+                    
+            The first integral can be solved using the substitution u = sin(t), du = cos(t)dt:<br>
+            -∫sin^2(t)dt = -(1/2)∫(1-cos(2t))dt = -(1/2)(t - (1/2)sin(2t)) + C<br><br>
+                    
+            The second integral can be solved using the substitution u = sin(t), du = cos(t)dt:<br>
+            ∫(1/2)(1-1/sqrt(1-u^2)) du = (1/2)(asin(u) - u*sqrt(1-u^2)) + C<br><br>
+                    
+            Finally, substituting back u = cos(x) in both integrals gives us the solution:<br>
+            ∫sin^3(x)cos^2(x)dx = -(1/2)(x - (1/2)sin(2x) + (1/2)asin(cos(x)) - cos(x)*sqrt(1-cos^2(x))) + C<br><br>
+                    
+            In summary, to integrate expressions of the form sin^mx cos^nx, <br>
+            we can use the reduction formula to reduce the powers of sine <br>
+            until we have an integral that we can easily evaluate using <br>
+            substitution and/or other integration techniques.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Reduction formula for ∫tan^nx dx and ∫co^tnx dx</h2>
+        <p>
+            The reduction formula for ∫tan^n(x)dx and ∫cot^n(x)dx are <br>
+            techniques used to integrate expressions that contain the <br>
+            tangent and cotangent functions raised to positive integer powers.<br><br>
+
+            Let's start with the reduction formula for ∫tan^2(x)dx:<br>
+            We begin by using substitution, where u = tan(x), <br>
+            which gives us du/dx = sec^2(x) and dx = du/sec^2(x):<br>
+            ∫tan^2(x)dx = ∫u^2 * (1 + tan^2(x)) * (du/sec^2(x))<br><br>
+
+            Now, we can use the identity 1 + tan^2(x) = sec^2(x) to simplify the integral:<br>
+            ∫tan^2(x)dx = ∫u^2 * sec^2(x) * (du/sec^2(x)) + ∫u^2 * tan^2(x) * (du/sec^2(x))<br><br>
+
+            The first integral on the right-hand side can be easily evaluated as u^2 + C, <br>
+            and for the second integral, we can use the reduction formula:<br>
+            ∫u^2 * tan^2(x) * (du/sec^2(x)) = (1/3) * u^3 - ∫u^2 * (du/sec^2(x))<br><br>
+
+            Using substitution again, where v = cos(x), <br>
+            which gives us dv/dx = -sin(x) and dx = -dv/sin(x):<br>
+            ∫u^2 * (du/sec^2(x)) = ∫(u^2 * sec^2(x)) * (du/sec^2(x)) = ∫u^2 du = (1/3) * u^3 + C1<br><br>
+
+            Substituting this back into the original equation, <br>
+            we get:<br>
+            ∫tan^2(x)dx = u^2 + (1/3) * u^3 - (1/3) * cot(x) + C<br><br>
+
+            Therefore, the solution to the integral ∫tan^2(x)dx is:<br>
+            ∫tan^2(x)dx = tan(x) - x + (1/3) * tan^3(x) + C<br><br>
+
+            Similarly, we can derive the reduction formula for <br>
+            ∫tan^n(x)dx by using the reduction formula for ∫tan^2(x)dx that we just derived. <br>
+            For example, let's use these reduction formulas to evaluate the integral ∫tan^4(x)dx:<br>
+            ∫tan^4(x)dx = ∫tan^2(x)tan^2(x)dx<br><br>
+
+            Using the reduction formula for ∫tan^2(x)dx, we get:<br>
+            ∫tan^4(x)dx = (1/3)tan^3(x) - ∫tan^2(x)dx<br><br>
+
+            Now, we can use the reduction formula for ∫tan^2(x)dx that we just derived, <br>
+            to simplify the integral:<br>
+            ∫tan^4(x)dx = (1/3)tan^3(x) - (1/3)tan(x) + x + C<br><br>
+
+            Similarly, we can derive the reduction formula for ∫cot^n(x)dx by using integration by parts:<br>
+            ∫cot^n(x)dx = (cot^(n-1)(x))/n + (n-1)/n ∫cot^(n-2)(x)dx<br><br>
+
+            Using the identity 1 + cot^2(x) = csc^2(x), we can simplify this equation to get:<br>
+            ∫cot^n(x)dx = -(cot^(n-1)(x))/(n-1) + (n-2)/(n-1) ∫cot^(n-2)(x)csc^2(x)dx<br><br>
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Reduction formula for ∫sec^nx dx and ∫cosec^nx dx</h2>
+        <p>
+            The reduction formula for ∫sec^n(x) dx and ∫cosec^n(x) dx are techniques <br>
+            used to integrate expressions that contain secant and cosecant functions <br>
+            raised to positive integer powers.<br><br>
+
+            Let's start with the reduction formula for ∫sec^2(x) dx:<br><br>
+
+            We begin by using integration by substitution:<br>
+            Let u = tan(x), then du/dx = sec^2(x) dx<br><br>
+
+            Substituting, we get:<br>
+            ∫sec^2(x) dx = ∫du/dx dx = ∫du = tan(x) + C<br><br>
+
+            Now, we can use this reduction formula to derive the reduction <br>
+            formula for ∫sec^n(x) dx, where n is a positive integer.<br><br>
+
+            We begin by using integration by parts:<br>
+            ∫sec^n(x) dx = (1/(n-1)) sec^(n-2)(x) tan(x) + (n-2)/(n-1) ∫sec^(n-2)(x) dx<br><br>
+
+            Now, we can use the identity 1 + tan^2(x) = sec^2(x) to rewrite the integral:<br>
+            ∫sec^n(x) dx = (1/(n-1)) sec^(n-2)(x) tan(x) + (n-2)/(n-1) ∫sec^(n-2)(x) (1 + tan^2(x)) dx<br><br>
+
+            We can simplify this equation to get:<br>
+            ∫sec^n(x) dx = (1/(n-1)) sec^(n-2)(x) tan(x) + (n-2)/(n-1) ∫sec^(n-2)(x) dx + (1/(n-1)) ∫sec^n(x) tan^2(x) dx<br><br>
+
+            Now, we have an integral with a lower power of secant and a higher power of tangent. <br>
+            We can use this reduction formula repeatedly to reduce the power of secant until <br>
+            we have an integral that we can easily evaluate.<br><br>
+
+            Similarly, we can derive the reduction formula for ∫cosec^n(x) dx<br>
+             by using the reduction formula for ∫sec^n(x) dx that we just derived.<br><br>
+
+            For example, let's use these reduction formulas to evaluate the integral ∫sec^3(x) dx:<br>
+            We start by using the reduction formula for ∫sec^3(x) dx:<br>
+            ∫sec^3(x) dx = (1/2) sec(x) tan(x) + (1/2) ∫sec(x) dx<br><br>
+
+            Now, we can use the reduction formula for ∫sec(x) dx:<br>
+            ∫sec^3(x) dx = (1/2) sec(x) tan(x) + (1/2)(ln|sec(x) + tan(x)|) + C<br><br>
+
+            Therefore, the solution to the integral ∫sec^3(x) dx is:<br>
+            ∫sec^3(x) dx = (1/2) sec(x) tan(x) + (1/2)(ln|sec(x) + tan(x)|) + C<br><br>
+
+            Similarly, we can use the reduction formula for ∫cosec^n(x) dx to <br>
+            evaluate integrals containing cosecant functions raised to positive integer powers.
+        </p>
+    </div>
+    <div class="white-colored content-data">
+        <h2 class="sub-heading">Reduction formula for ∫ e^ax sin^n bx dx and ∫ e^ax cos^ nbx dx</h2>
+        <p>
+            The reduction formulas for ∫e^ax sin^n(bx) dx and ∫e^ax cos^n(bx) dx <br>
+            are used to integrate expressions that contain both the exponential <br>
+            function and sine or cosine functions raised to positive integer powers.<br><br>
+
+            First, let's look at the reduction formula for ∫e^ax sin^n(bx) dx, <br>
+            where n is a positive integer. We start by using integration by parts:<br>
+            ∫e^ax sin^n(bx) dx = (-1/b)(e^ax sin^(n-1)(bx)) + (n-1)/b ∫e^ax sin^(n-2)(bx) cos(bx) dx<br><br>
+
+            Now, we can use the identity sin^2(x) + cos^2(x) = 1 to rewrite the integral:<br>
+            ∫e^ax sin^n(bx) dx = (-1/b)(e^ax sin^(n-1)(bx)) + (n-1)/b ∫e^ax [1 - cos^2(bx)]^(n/2 - 1) cos(bx) dx<br><br>
+
+            We can simplify this equation to get:<br>
+            ∫e^ax sin^n(bx) dx = (-1/b)(e^ax sin^(n-1)(bx))/(n) + (n-1)/n ∫e^ax [1 - cos^2(bx)]^(n/2 - 1) cos(bx) dx<br><br>
+
+            Now, we have an integral with a lower power of sine and a higher power of cosine. <br>
+            We can use this reduction formula repeatedly to reduce the power of sine until <br>
+            we have an integral that we can easily evaluate.<br><br>
+
+            Similarly, we can derive the reduction formula for ∫e^ax cos^n(bx) dx <br>
+            by using integration by parts and the identity cos^2(x) + sin^2(x) = 1. <br>
+            The formula is:<br>
+            ∫e^ax cos^n(bx) dx = (1/b)(e^ax cos^(n-1)(bx))/(n) + (n-1)/n ∫e^ax [1 - sin^2(bx)]^(n/2 - 1) sin(bx) dx<br><br>
+
+            Here's an example of how to use these reduction formulas to evaluate <br>
+            the integral ∫e^2x sin^3(3x) dx:<br>
+            We begin with the formula for ∫e^ax sin^n(bx) dx:<br>
+            ∫e^2x sin^3(3x) dx = (-1/3)(e^2x sin^2(3x)) + (2/3) ∫e^2x sin(3x) cos^2(3x) dx<br><br>
+
+            Now, we use the formula for ∫e^ax cos^n(bx) dx to simplify the remaining integral:<br>
+            ∫e^2x sin^3(3x) dx = (-1/3)(e^2x sin^2(3x)) + (2/9) (e^2x sin(3x) cos(3x)) - (4/9) ∫e^2x cos^3(3x) dx<br><br>
+
+            We can use the reduction formula for ∫e^ax cos^n(bx) dx to evaluate the last integral:<br>
+            ∫e^2x cos^3(3x) dx = (1/9)(e^2x cos^2(3x)) + (2/9) ∫e^2x cos(3x) sin^2(3x) dx<br><br>
+
+            We can use the reduction formula for ∫e^ax sin^n(bx) dx to evaluate the remaining integral:<br>
+            ∫e^2x cos^3(3x) dx = (1/9)(e^2x cos^2(3x)) + (2/27)(e^2x cos(3x) sin(3x)) - (4/27) ∫e^2x cos(3x) dx<br><br>
+
+            Simplifying further, we get:<br>
+            ∫e^2x sin^3(3x) dx = (-1/3)(e^2x sin^2(3x)) + (2/9) (e^2x sin(3x) cos(3x)) + (4/81)(e^2x cos^2(3x)) - (8/81)(e^2x sin(3x))<br><br>
+
+            So, we have successfully evaluated the integral using the reduction formulas.
+        </p>
+    </div>
+    <div class="colored-section content-data">
+        <h2 class="sub-heading">Definite Integrals</h2>
+        <p>
+            Definite integrals are a way to find the exact area under a curve between two points. <br>
+            For example, if we have a curve that represents the height of a hill at different distances, <br>
+            we can use a definite integral to find the area under the curve between two points, <br>
+            which tells us the total distance we would travel if we were to walk along the hill between those two points.<br><br>
+
+            To find the definite integral of a function f(x) between two points a and b, <br>
+            we add up the areas of many small rectangles that fit under the curve between a and b. <br>
+            The width of each rectangle is very small, and the height is the value of the function at some point in that rectangle.<br>
+             The more rectangles we use, the more accurate our estimate of the area will be.<br><br>
+            
+            We can write the definite integral of f(x) between a and b as ∫(from a to b) f(x) dx. <br>
+            The "dx" at the end tells us that we are integrating with respect to x, <br>
+            which means we are adding up the areas of rectangles that are wider in the x-direction.<br><br>
+            
+            We can also use some rules to make it easier to calculate definite integrals. <br>
+            For example, we can break up the interval [a, b] into smaller intervals and add up the integrals of those intervals separately. <br>
+            We can also simplify the integral if we know that the function f(x) has certain symmetries, <br>
+            or if we can write it as a sum or product of simpler functions.<br><br>
+            
+            Finally, we can think of the definite integral as the limit of a sum. <br>
+            We start by dividing the interval [a, b] into n smaller intervals of equal width. <br>
+            We then add up the areas of n rectangles, where the height of each rectangle is <br>
+            the value of the function at some point in the corresponding interval, and the width is the width of the interval. <br>
+            As we make n bigger and bigger, the rectangles become thinner and thinner, <br>
+            and their total area approaches the exact area under the curve. This is what we mean <br>
+            when we say that the definite integral is the limit of a sum.<br><br>
+            
+            For example, suppose we want to find the area under the curve y = x^2 between x = 0 and x = 1. <br>
+            We can divide the interval [0, 1] into n equal subintervals, each of width Δx = 1/n. <br>
+            We can then approximate the area under the curve by adding up the areas of n rectangles, <br>
+            where the height of each rectangle is the value of x^2 at some point in the corresponding interval. The sum of these areas is:   <br>         
+            Σ(from i=1 to n) (iΔx)^2 Δx<br><br>
+            
+            As we take the limit as n approaches infinity, this sum becomes the definite integral of x^2 from 0 to 1:     <br>       
+            ∫(from 0 to 1) x^2 dx = lim(n→∞) Σ(from i=1 to n) (iΔx)^2 Δx<br><br>
+            
+            Evaluating this limit requires some calculus, but we can approximate it using numerical methods. <br>
+            For example, if we use n = 100, we get an approximation of the definite integral:            <br>
+            ∫(from 0 to 1) x^2 dx ≈ 0.3333<br><br>
+            
+            This tells us that the area under the curve between x = 0 and x = 1 is approximately 0.3333 square units.
+        </p>
+    </div>
+</body>
+</html>
