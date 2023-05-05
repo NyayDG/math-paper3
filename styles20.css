@@ -1,0 +1,106 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/******************* CLASS SELECTOR ***********************/
+
+/* 01 */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* 02 NAVIGATION BAR */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+/* TITLE */
+
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* 03 DOWNLOAD BUTTONS. * ALSO INCLUDE CSS ON BUTTONS OF FOOTER */
+.download-buttons {
+    margin: 5% 3% 5% 0;
+}
+
+.download-a-tag {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title-image {
+    width: 19%;
+    position: absolute;
+    right: 22%;
+}
+
+/* PRESS SECTION */
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* FOOTER SECTION */
+.social-icon {
+    margin: 20px 10px;
+    text-decoration: none;
+}
+
+/******************** ID SELECTOR **************************/
+
+/* TITLE */
+#title {
+    background-color: #9DC08B;
+    color: #fff;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+/*************** MEDIA QUERY ************************/
+@media (max-width: 1020px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        width: 45%;
+    }
+}
