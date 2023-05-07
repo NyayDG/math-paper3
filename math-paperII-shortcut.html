@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nyay D.G.</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="colored-section content-data">
+            <h2 class="sub-heading">Matrices</h2>
+            <p>
+                <strong>Topic 1: Matrix Operations</strong> <br><br>
+
+                Matrices are rectangular arrays of numbers. They can be added, subtracted, <br>
+                and multiplied by a scalar (a single number).<br>
+                Addition of matrices is done by adding corresponding elements. For example, <br>
+                if we have matrices A and B, the sum A + B is obtained by adding the elements <br>
+                in the same positions.<br>
+                Subtraction of matrices is similar to addition, but we subtract the corresponding <br>
+                elements instead.<br>
+                Multiplication of a matrix by a scalar involves multiplying every element of the<br>
+                matrix by that scalar.<br><br><br><br>
+
+
+                <strong>Topic 2: Properties of Matrix Operations</strong><br><br>
+
+                Matrix addition is commutative, which means A + B = B + A.<br>
+                Matrix addition is also associative, meaning that (A + B) + C = A + (B + C).<br>
+                Matrix multiplication by a scalar is distributive, so if k is a scalar and A is a matrix, <br>
+                k(A + B) = kA + kB.<br><br><br><br>
+
+
+                <strong>Topic 3: Determinant of a Square Matrix</strong><br><br>
+
+                The determinant is a scalar value associated with a square matrix.<br>
+                It helps us understand various properties of the matrix, such as whether it is invertible <br>
+                or singular.<br>
+                The determinant of a matrix is denoted as |A|.<br>
+                The determinant can be computed using various methods, such as cofactor expansion or using <br>
+                the properties of determinants.<br><br><br><br>
+
+
+                <strong>Topic 4: Inverse of a Square Matrix</strong><br><br>
+
+                The inverse of a square matrix A is denoted as A^-1.<br>
+                If a matrix A has an inverse, it can be multiplied by its inverse to give the identity matrix: <br>
+                A * A^-1 = A^-1 * A = I, where I is the identity matrix.<br>
+                Not all matrices have an inverse. A matrix is invertible if and only if its determinant is <br>
+                nonzero.<br>
+                The inverse of a matrix can be found using various methods, such as Gauss-Jordan elimination <br>
+                or the adjugate matrix method.<br><br><br><br>
+
+
+                <strong>Topic 5: Transpose of a Matrix</strong><br><br>
+
+                The transpose of a matrix is obtained by interchanging its rows and columns.<br>
+                It is denoted as A^T, where A is the original matrix.<br>
+                The transpose of a matrix has the property that (A^T)^T = A, meaning that if you take <br>
+                the transpose of a transpose, you get the original matrix back.<br><br><br><br>
+
+
+                <strong>Topic 6: Orthogonal and Unitary Matrices</strong><br><br>
+
+                An orthogonal matrix is a square matrix whose transpose is equal to its inverse: <br>
+                A^T * A = A * A^T = I.<br>
+                Orthogonal matrices have the property that the columns (or rows) of the matrix form an <br>
+                orthonormal set of vectors.<br>
+                Unitary matrices are the complex equivalent of orthogonal matrices.<br>
+                Unitary matrices have the property that the conjugate transpose of the matrix is equal <br>
+                to its inverse: A^H * A = A * A^H = I, where A^H represents the conjugate transpose of A.<br><br><br><br>
+
+
+                <strong>Real-World Applications:</strong><br><br>
+
+                Matrices have applications in various fields such as computer graphics, physics, economics, <br>
+                and engineering.<br>
+                They are used to represent and solve systems of linear equations, which are fundamental in <br>
+                many scientific and engineering disciplines.<br>
+                Matrices are used in image processing, where transformations like rotation, scaling, and <br>
+                translation are applied to images using matrix operations.<br>
+                Orthogonal matrices are used in computer graphics to perform transformations without <br>
+                distorting the shapes of objects.<br>
+                Unitary matrices are utilized in quantum mechanics to represent quantum states and <br>
+                transformations.<br><br>
+
+                <strong>Example:</strong><br>
+                Let's consider a real-world example of matrix operations in economics. <br>
+                Suppose we have a matrix A representing the prices of different goods, <br>
+                and a matrix B representing the quantities of those goods purchased by consumers. <br>
+                We can multiply these matrices (A * B) to obtain a new matrix C, which represents <br>
+                the total expenditure on each good.<br><br>
+            </p>
+            <pre>
+                Matrix A:
+                | 5 2 |
+                | 3 4 |
+                Matrix B:
+                | 2 5 |
+                | 1 3 |
+
+                To calculate the total expenditure, we perform matrix multiplication as follows:
+                C = A * B =
+                | 52 + 21 55 + 23 |
+                | 32 + 41 35 + 43 |
+
+                Simplifying the calculations:
+                C =
+                | 10 + 2 25 + 6 |
+                | 6 + 4 15 + 12 |
+
+                C =
+                | 12 31 |
+                | 10 27 |
+
+            </pre>
+            <p>
+                The resulting matrix C shows the total expenditure on each good based on the given <br>
+                prices and quantities. For example, the element C[1,1] represents the total expenditure <br>
+                on the first good, which is $12, and C[2,2] represents the total expenditure on the second <br>
+                good, which is $27.<br><br>
+
+                This matrix multiplication allows economists to analyze the overall expenditure patterns, <br>
+                track changes in consumer behavior, and make informed decisions regarding pricing, production, <br>
+                and market trends.
+            </p>
+        </div>
+        <div class="white-colored content-data">
+            <h2 class="sub-heading">Rank of a Matrix</h2>
+            <p>
+                Topic 1: Elementary Row and Column Operations
+                <br><br>
+                Elementary row operations involve performing certain operations on the rows of a matrix. <br>
+                These operations include:
+                <ul>
+                    <li>Swapping two rows.</li>
+                    <li>Multiplying a row by a nonzero scalar.</li>
+                    <li>Adding a multiple of one row to another row.</li>
+                </ul>
+                Similarly, elementary column operations involve operations on the columns of a matrix.
+                <br><br>
+                Topic 2: Equivalent Matrices
+                <br><br>
+                Two matrices are said to be equivalent if one can be obtained from the other through a <br>
+                sequence of elementary row and column operations. Equivalent matrices represent the same <br>
+                linear transformation and have the same solution space for systems of linear equations.
+                <br><br>
+                Topic 3: Row Echelon Form
+                <br><br>
+                Row echelon form is a specific form of a matrix obtained through row operations. In row <br>
+                echelon form, the following conditions are satisfied:
+                <ul>
+                    <li>All rows containing only zeros are at the bottom.</li>
+                    <li>The first nonzero element (also called the leading entry) of each nonzero row is 
+                        to the right of the leading entry of the row above it.</li>
+                    <li>All elements below the leading entry of each row are zeros.</li>
+                </ul>
+                <br>
+                Topic 4: Rank of a Matrix
+                <br><br>
+                The rank of a matrix is defined as the maximum number of linearly independent rows or <br>
+                columns in the matrix. It provides information about the dimension of the column space <br>
+                or row space of the matrix. The rank of a matrix can be determined by examining its row <br>
+                echelon form. The rank is an important concept in linear algebra and has various applications <br>
+                in fields such as system analysis, coding theory, and optimization.
+                <br><br>
+                Topic 5: Working Procedure for Finding Rank Using Elementary Operations
+                <br><br>
+                To find the rank of a matrix using elementary operations, follow these steps:
+                <ol>
+                    <li>Start with the original matrix.</li>
+                    <li>Apply elementary row operations to transform the matrix into row echelon form.</li>
+                    <li>Count the number of nonzero rows in the row echelon form. This count is the rank of the matrix.</li>
+                    <li>Alternatively, the rank can also be determined by counting the number of nonzero <br>
+                        leading entries in the row echelon form.</li>
+                </ol>
+                <br>
+                Real-World Applications:
+                <br><br>
+                The concept of rank is used in image and signal processing for tasks such as image compression and denoising. <br>
+                In network analysis, the rank of a matrix is used to study the connectivity and flow of information in networks. <br>
+                The rank of a matrix is utilized in data analysis to identify independent variables and eliminate redundant <br>
+                information. In machine learning, the rank of a data matrix can provide insights into the dimensionality <br>
+                and quality of the data.
+                <br><br>
+                Example:<br>
+                Let's consider a real-world example of finding the rank of a matrix. Suppose we have a <br>
+                matrix A representing the grades of students in different subjects. By performing elementary<br>
+                row operations, we transform the matrix into row echelon form. We observe that there are 4 <br>
+                nonzero rows in the row echelon form. Therefore, the rank of matrix A is 4, indicating that <br>
+                there are 4 linearly independent rows in the matrix, representing 4 essential subjects for the <br>
+                students.
+            </p>
+        </div>
+        <div class="colored-section content-data">
+            <h2 class="sub-heading">Linear Equations</h2>
+            <p>
+                Topic 1: Linear Equations and Systems of Equations
+                <br><br>
+                A linear equation is an equation in which the highest power of the variable is 1. <br>
+                It can be written in the form a₁x₁ + a₂x₂ + ... + aₙxₙ = b, where x₁, x₂, ..., xₙ are <br>
+                variables, a₁, a₂, ..., aₙ are coefficients, and b is a constant.
+                <br><br>
+                A system of linear equations consists of multiple linear equations with the same variables. <br>
+                Solving a system of linear equations involves finding values of the variables that satisfy <br>
+                all the equations simultaneously.
+                <br><br>
+                Topic 2: Equivalent Systems
+                <br><br>
+                Two systems of linear equations are said to be equivalent if they have the same solution set. <br>
+                Equivalent systems can be obtained by applying elementary row operations to the coefficient <br>
+                matrix and the augmented matrix of the systems.
+                <br><br>
+                Topic 3: Homogeneous Systems of Equations
+                <br><br>
+                A homogeneous system of linear equations is a system in which all the constant terms are zero (b = 0 in each equation). <br>
+                The trivial solution, where all variables are zero, always exists for a homogeneous system. Nontrivial solutions <br>
+                (where at least one variable is nonzero) exist if the system has infinitely many solutions.
+                <br><br>
+                Topic 4: Characteristic Roots and Characteristic Vectors
+                <br><br>
+                Characteristic roots (eigenvalues) and characteristic vectors (eigenvectors) are associated with square matrices. <br>
+                For a matrix A, a scalar λ is a characteristic root if the equation (A - λI)x = 0 has a nontrivial solution, <br>
+                where I is the identity matrix and x is a nonzero vector. The characteristic vectors correspond to the <br>
+                nontrivial solutions of (A - λI)x = 0. Characteristic roots and vectors have various applications in physics, <br>
+                engineering, and data analysis.
+                <br><br>
+                Real-World Applications:
+                <br><br>
+                Linear equations are used in various fields such as physics, engineering, economics, <br>
+                and computer science to model and solve real-world problems. Systems of linear equations <br>
+                are used to analyze and optimize processes in engineering, such as electrical circuits and <br>
+                structural analysis. Homogeneous systems of equations arise in the study of linear transformations <br>
+                and the behavior of systems in equilibrium. Characteristic roots and vectors are used in physics <br>
+                to study the behavior of vibrating systems, quantum mechanics, and analyzing the stability of dynamic systems.
+                <br><br>
+                Example:
+                <br><br>
+                Let's consider a real-world example of linear equations and systems. Suppose we have a system <br>
+                of linear equations representing a mixture of chemicals in a chemical reaction. The coefficients <br>
+                in the equations represent the quantities of different chemicals involved, and the constants <br>
+                represent the desired final composition. By solving the system of equations, we can determine <br>
+                the quantities of each chemical needed to achieve the desired composition.
+                <br><br>
+                For example, the system of equations:
+                <br><br>
+                2x + y = 10
+                <br>
+                x - 3y = 2
+                <br><br>
+
+                represents a mixture of two chemicals. By solving this system, we can find the values of x and y <br>
+                that satisfy both equations, giving us the correct proportions of the chemicals for the desired mixture.
+                <br><br>
+                In the context of characteristic roots and vectors, let's consider a physics application. <br>
+                Suppose we have a vibrating system, such as a guitar string. By representing the behavior <br>
+                of the system as a matrix, we can find the characteristic roots and vectors. <br>
+                The characteristic roots correspond to the frequencies at which the string will vibrate, <br>
+                and the characteristic vectors represent the modes of vibration. Understanding these <br>
+                characteristic properties helps in analyzing and predicting the behavior of the vibrating system.
+            </p>
+        </div>
+        <div class="white-colored content-data">
+            <h2 class="sub-heading">Trigonometry</h2>
+            <p>
+                Topic 1: Complex Quantities
+                <br><br>
+                Complex quantities involve both real and imaginary components. A complex number can be written <br>
+                as z = a + bi, where a is the real part and bi is the imaginary part. Complex numbers can be <br>
+                represented in the complex plane as points (a, b) or vectors.
+                <br><br>
+                Topic 2: DeMoivre's Theorem
+                <br><br>
+                DeMoivre's theorem is a formula that relates complex numbers to trigonometric functions. <br>
+                It states that for any complex number z = r(cosθ + isinθ), where r is the magnitude <br>
+                and θ is the argument (angle), we have z^n = r^n (cos(nθ) + isin(nθ)). DeMoivre's theorem <br>
+                allows us to raise complex numbers to integer powers using trigonometric functions.
+                <br><br>
+                Topic 3: Expansions of Trigonometric Functions
+                <br><br>
+                Trigonometric functions, such as sine, cosine, and tangent, can be expanded using power series. <br>
+                The expansions of sine and cosine functions are particularly important:
+                <br><br>
+                sin(x) = x - (x^3)/3! + (x^5)/5! - (x^7)/7! + ...
+                <br>
+                cos(x) = 1 - (x^2)/2! + (x^4)/4! - (x^6)/6! + ...
+                <br><br>
+                These expansions allow us to approximate trigonometric functions for a given value of x.
+                <br><br>
+                Topic 4: Exponential Series for Complex Quantities
+                <br>
+                The exponential function e^x can be expanded using a power series. For complex quantities, we can express <br>
+                e^(ix) using Euler's formula: e^(ix) = cos(x) + isin(x). This expansion is used to relate complex numbers <br>
+                to exponential functions.
+                <br><br>
+                Topic 5: Circular Functions for Complex Angles
+                <br><br>
+                Circular functions, such as sine and cosine, can be defined for complex angles. The definitions are based <br>
+                on the expansions of trigonometric functions and exponential series. For example, sin(ix) = i*sinh(x), and <br>
+                cos(ix) = cosh(x), where sinh and cosh are hyperbolic functions.
+                <br><br>
+                Topic 6: Inverse Circular Functions and Inverse Hyperbolic Functions
+                <br><br>
+                Inverse circular functions, such as arcsin, arccos, and arctan, provide the angle corresponding to a given <br>
+                trigonometric value. Inverse hyperbolic functions, such as arcsinh, arccosh, and arctanh, provide the value <br>
+                corresponding to a given hyperbolic function. These functions help in solving equations involving trigonometric <br>
+                or hyperbolic functions.
+                <br><br>
+                Real-World Applications:
+                <br><br>
+                Trigonometry is widely used in physics, engineering, and navigation to calculate distances, angles, and <br>
+                the behavior of waves. Complex quantities are utilized in electrical engineering to represent impedance, <br>
+                phasors, and alternating currents. The expansion of trigonometric functions is essential in signal processing <br>
+                for analyzing and manipulating signals. Inverse circular functions are applied in geometry and physics to find <br>
+                angles and solve geometric problems. Inverse hyperbolic functions find applications in mathematics, physics, <br>
+                and statistics for modeling various phenomena.
+                <br><br>
+                Example:
+                <br><br>
+                Let's consider a real-world example of complex quantities and DeMoivre's theorem in electrical engineering. <br>
+                Suppose we have an AC circuit with a voltage given by V = 10(cos(ωt) + isin(ωt)), where ω is the angular <br>
+                frequency and t is time. By applying DeMoivre's theorem, we can calculate the voltage at any time t by <br>
+                raising the complex number to the power of ωt. This allows us to analyze the behavior of the circuit and <br>
+                calculate important quantities.
+            </p>
+        </div>
+    </body>
+</html>
