@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nyay D.G.</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="colored-section content-data">
+            <h2 class="sub-heading">Coordinates and Transformation of Coordinates</h2>
+            <p>
+                <strong>Topic 1: Direction cosines of a line</strong> 
+                <br><br>
+                Direction cosines are used to represent the orientation of a line in space.
+                Let's consider a line in three-dimensional space. We can determine its direction by finding the cosines of the angles it makes with the coordinate axes.
+                The direction cosines of a line are usually denoted by l, m, and n, corresponding to the x, y, and z axes, respectively.
+                To find the direction cosines, we divide the coordinates of the line's direction vector by its magnitude.
+                The direction cosines satisfy the relationship: l^2 + m^2 + n^2 = 1.
+                <br><br>
+                Example: Suppose we have a line with a direction vector of (3, -4, 5). To find its direction cosines, we divide each coordinate by the magnitude of the direction vector. Let's calculate:
+                Magnitude = sqrt(3^2 + (-4)^2 + 5^2) = sqrt(50) = 5√2
+                Direction cosines: (3/5√2, -4/5√2, 5/5√2)
+                <br><br>
+                Trick to remember: Remember that direction cosines represent the orientation of a line in space, and their squares sum up to 1. Imagine the line as a unit vector that can point in any direction, and its components (l, m, n) act like cosines of the angles it forms with the coordinate axes.
+                <br><br>
+                <strong>Topic 2: Projection on a straight line</strong>
+                <br><br>
+                Projection refers to the shadow or image of a point or a vector on a given line.
+                The projection of a point P on a line L is the point on L that is closest to P.
+                The projection of a vector V on a line L is a vector parallel to L, having the same direction as V and a magnitude equal to the scalar projection of V onto L.
+                The scalar projection of V onto L is the magnitude of the projection of V onto L.
+                The projection of a point or vector can be found using the concept of dot product.
+                <br><br>
+                <strong>Example: </strong> 
+                <br><br>
+                Let's say we have a line L defined by the equation x + 2y - 3z = 0. We want to find the projection of the point P(1, -1, 2) on this line.
+                To find the projection, we can use the formula:
+                Projection of P on L = (P dot n) * n,
+                where n is the direction vector of the line.
+                Let's calculate:
+                Direction vector n = (1, 2, -3) (coefficients of x, y, z in the line equation)
+                Projection of P on L = (1, -1, 2) dot (1, 2, -3) * (1, 2, -3)
+                = (1 + (-2) + (-6)) * (1, 2, -3)
+                = (-7) * (1, 2, -3)
+                = (-7, -14, 21)
+                <br><br>
+                <strong>Trick to remember: </strong> 
+                <br><br>
+                When transforming coordinates, think of it as shifting the origin and rotating the axes. For shifting, subtract the new origin coordinates from the original coordinates. For rotation, use the transformation formulas for the new axes. Remember to perform the operations in order: first shift, then rotate.
+            </p>
+        </div>
+        <div class="white-colored content-data">
+            <h2 class="sub-heading">The Plane</h2>
+            <p>
+                <strong>Topic 1: General equation of first degree</strong>
+                <br><br>
+                The general equation of the plane in three-dimensional space is given by Ax + By + Cz + D = 0, where A, B, C, and D are constants.
+                This equation represents a plane with normal vector (A, B, C) and can be interpreted as the dot product of the position vector (x, y, z) and the normal vector.
+                The coefficients A, B, and C determine the orientation of the plane, while the constant D determines its position relative to the origin.
+                <br><br>
+                Example: <br>
+                Consider the equation 2x + 3y - 4z + 5 = 0. This represents a plane with a normal vector (2, 3, -4) and a distance of 5 units from the origin.
+                <br><br>
+                Trick to remember: Think of the general equation of the plane as a combination of the coordinates (x, y, z) and the coefficients (A, B, C, D). The coefficients determine the orientation and position of the plane, while the variables represent any point on the plane.
+                <br><br>
+                <strong>Topic 2: Transformation to the normal form</strong>
+                <br><br>
+                The normal form of the equation of a plane is of the form x/a + y/b + z/c = 1, where a, b, and c are nonzero constants.
+                To transform the general equation to the normal form, divide the equation by the constant term (D) and rewrite it in the above form.
+                The constants a, b, and c in the normal form represent the reciprocals of the coefficients A, B, and C, respectively.
+                <br><br>
+                Example: <br>
+                Let's transform the equation 2x + 3y - 4z + 5 = 0 to the normal form.
+                Divide by 5: (2/5)x + (3/5)y + (-4/5)z + 1 = 0.
+                The normal form is (2/5)x + (3/5)y + (-4/5)z = 1.
+                <br><br>
+                Trick to remember: Remember that the normal form of a plane equation has the form x/a + y/b + z/c = 1. To transform the general equation, divide by the constant term and rewrite it in the normal form. The constants in the normal form are reciprocals of the coefficients in the general equation.
+                <br><br>
+                <strong>Topic 3: Angle between two planes</strong>
+                <br><br>
+                The angle between two planes can be determined using their normal vectors.
+                If two planes have normal vectors n1 and n2, then the cosine of the angle between them is given by:
+                cos(θ) = (n1 dot n2) / (|n1| * |n2|), where dot represents the dot product and |n1| and |n2| represent the magnitudes of the normal vectors.
+                <br><br>
+                Example: <br>
+                Let's consider two planes with normal vectors n1 = (1, -2, 3) and n2 = (2, 1, -1). To find the angle between them, we can use the formula:
+                cos(θ) = (1*2 + (-2)1 + 3(-1)) / (sqrt(1^2 + (-2)^2 + 3^2) * sqrt(2^2 + 1^2 + (-1)^2))
+                = (2 - 2 - 3) / (sqrt(14) * sqrt(6))
+                = -3 / (sqrt(14) * sqrt(6))
+                <br><br>
+                Trick to remember: <br>
+                To find the angle between two planes, use their normal vectors. Calculate the dot product of the normal vectors and divide it by the product of their magnitudes.
+                <br><br>
+                <strong>Topic 4:Intercepts form of the equation of a plane</strong>
+                <br><br>
+                The intercepts form of the equation of a plane represents the plane in terms of its x-intercept, y-intercept, and z-intercept.
+                Let's assume that the intercepts along the x-axis, y-axis, and z-axis are represented by a, b, and c, respectively.
+                The intercepts form of the equation of a plane is given by x/a + y/b + z/c = 1.
+                This form helps us visualize the plane by knowing where it intersects each coordinate axis.
+                <br><br>
+                Example:<br>
+                Suppose a plane intersects the x-axis at 2, the y-axis at -3, and the z-axis at 4. To find the equation of the plane in intercepts form, we substitute these values into the equation:
+                x/2 + y/(-3) + z/4 = 1
+                <br><br>
+                Trick to remember: <br>
+                The intercepts form of the equation of a plane is x/a + y/b + z/c = 1, where a, b, and c represent the intercepts along the x-axis, y-axis, and z-axis, respectively. Substitute the intercept values into the equation to find the equation of the plane.
+                <br><br>
+                <strong>Topic 5:Plane through three points</strong>
+                <br><br>
+                To find the equation of a plane passing through three non-collinear points P1(x1, y1, z1), P2(x2, y2, z2), and P3(x3, y3, z3), we can use the following method:
+                Find two vectors: v1 = P2 - P1 and v2 = P3 - P1.
+                Take the cross product of v1 and v2 to find the normal vector of the plane, denoted as n.
+                The equation of the plane is then given by n dot (P - P1) = 0, where P(x, y, z) represents any point on the plane.
+                <br><br>
+                Example: <br>
+                Let's find the equation of the plane passing through the points P1(1, 2, 3), P2(4, 5, 6), and P3(7, 8, 9).
+                <br><br>
+                Find vectors v1 and v2:
+                v1 = P2 - P1 = (4-1, 5-2, 6-3) = (3, 3, 3)
+                v2 = P3 - P1 = (7-1, 8-2, 9-3) = (6, 6, 6)
+                Calculate the cross product of v1 and v2 to find the normal vector n:
+                n = v1 x v2 = (3, 3, 3) x (6, 6, 6) = (0, 0, 0)
+                Note: If the cross product is the zero vector, it means the points are collinear, and no unique plane can be formed.
+                Since the cross product is the zero vector, we cannot determine the equation of the plane through these points.
+                <br><br>
+                Trick to remember: <br>
+                To find the equation of a plane passing through three non-collinear points, subtract one point from the other two to find two vectors. Take their cross product to find the normal vector. Then use the equation n dot (P - P1) = 0, where P represents any point on the plane.
+            </p>
+        </div>
+        <div class="colored-section content-data">
+            <h2 class="sub-heading">Straight Line</h2>
+            <p>
+                <strong>Topic 1: Representation of a line</strong>
+                <br><br>
+                A line in three-dimensional space can be represented using various forms, such as:
+                Vector form: r = a + λd, where r is a position vector on the line, a is a known point on the line, d is the direction vector of the line, and λ is a parameter.
+                Cartesian form: (x - x₁)/a = (y - y₁)/b = (z - z₁)/c, where (x₁, y₁, z₁) is a known point on the line, and a, b, and c are the direction ratios of the line.
+                <br><br>
+                <strong>Example:</strong>
+                Vector form: r = (1, 2, 3) + λ(2, -1, 3)
+                Cartesian form: (x - 1)/2 = (y - 2)/(-1) = (z - 3)/3
+                Trick to remember: The vector form of a line is r = a + λd, where a is a point on the line and d is the direction vector. The Cartesian form of a line is (x - x₁)/a = (y - y₁)/b = (z - z₁)/c, where (x₁, y₁, z₁) is a known point on the line, and a, b, and c are the direction ratios.
+                <br><br>
+                <strong>Topic 2: Equations of lines through a given point with a given direction or through two points</strong>
+                <br><br>
+                To find the equation of a line through a given point P₁(x₁, y₁, z₁) with a given direction vector d(a, b, c), we can use the vector form: r = P₁ + λd, where λ is a parameter.
+                To find the equation of a line through two points P₁(x₁, y₁, z₁) and P₂(x₂, y₂, z₂), we can find the direction vector d = P₂ - P₁ and then use the vector form: r = P₁ + λd.
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                Line through a point: Given point P₁(2, 3, 4) and direction vector d(1, -1, 2), the equation of the line is r = (2, 3, 4) + λ(1, -1, 2).
+                Line through two points: Given points P₁(1, 2, 3) and P₂(4, 5, 6), the direction vector is d = (4-1, 5-2, 6-3) = (3, 3, 3). The equation of the line is r = (1, 2, 3) + λ(3, 3, 3).
+                Trick to remember: To find the equation of a line through a given point with a given direction, use the vector form r = P₁ + λd, where P₁ is the point and d is the direction vector. To find the equation of a line through two points, subtract one point from the other to find the direction vector and use the vector form.
+                <br><br>
+                <strong>Topic 3: Angle between a line and a plane</strong>
+                <br><br>
+                The angle between a line and a plane can be determined using their direction vectors.
+                If a line has a direction vector d and a plane has a normal vector n, then the cosine of the angle between them is given by:
+                cos(θ) = |d dot n| / (|d| * |n|), where dot represents the dot product and |d| and |n| represent the magnitudes of the vectors.
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                Consider a line with a direction vector d(2, -1, 3) and a plane with a normal vector n(1, 2, -2). We want to find the angle between the line and the plane.
+
+                Solution:
+                To find the angle, we can use the formula:
+                cos(θ) = |d dot n| / (|d| * |n|)
+
+                First, calculate the dot product of the direction vector d and the normal vector n:
+                d dot n = (2 * 1) + (-1 * 2) + (3 * -2) = 2 - 2 - 6 = -6
+
+                Next, calculate the magnitudes of the vectors:
+                |d| = sqrt(2^2 + (-1)^2 + 3^2) = sqrt(4 + 1 + 9) = sqrt(14)
+                |n| = sqrt(1^2 + 2^2 + (-2)^2) = sqrt(1 + 4 + 4) = sqrt(9) = 3
+
+                Substitute these values into the formula:
+                cos(θ) = |-6| / (sqrt(14) * 3) = 6 / (sqrt(14) * 3)
+
+                To find the angle θ, we can take the inverse cosine (arccos) of this value:
+                θ = arccos(6 / (sqrt(14) * 3))
+                <br><br>
+                Trick to remember: To find the angle between a line and a plane, calculate the dot product of their direction vectors and divide it by the product of their magnitudes. Take the inverse cosine of this value to obtain the angle.
+                <br><br>
+                <strong>Topic 4: Coplanar lines and coplanarity conditions</strong>
+                <br><br>
+                Coplanar lines are lines that lie in the same plane. In other words, they can be contained within a single plane without any of them intersecting or crossing each other.
+                To determine if lines are coplanar, we can check if their direction vectors are parallel or proportional to each other.
+                If two lines have direction vectors d1 and d2, they are coplanar if d1 and d2 are parallel or if d1 is a scalar multiple of d2 (and vice versa).
+                Conditions for coplanarity:
+
+                If d1 and d2 are parallel, the lines are coplanar.
+                If d1 is a scalar multiple of d2 or d2 is a scalar multiple of d1, the lines are coplanar.
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                Consider two lines with direction vectors d1(2, 1, 3) and d2(4, 2, 6). We can determine if they are coplanar by checking if the direction vectors are parallel or proportional to each other.
+
+                Since d2 = 2 * d1, the lines are coplanar.
+                <br><br>
+                Trick to remember: To check if lines are coplanar, compare their direction vectors. If the direction vectors are parallel or proportional to each other, the lines are coplanar.
+                <br><br>
+                <strong>Topic 5: Shortest distance between two lines</strong>
+                <br><br>
+                The shortest distance between two skew lines (lines that do not intersect and are not parallel) can be found using the concept of vector projections.
+                The vector connecting any two points on the lines can be used as the direction vector for the shortest distance.
+                To find the shortest distance, we need to project the vector connecting two points of one line onto the direction vector of the other line (or vice versa).
+                The magnitude of this projected vector represents the shortest distance between the lines.
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                Consider two skew lines L1 and L2, with direction vectors d1(1, 2, 3) and d2(2, -1, 4), and points P1(2, 1, 3) on L1 and P2(-1, 3, 2) on L2.
+
+                To find the shortest distance, we can:
+
+                Calculate the vector connecting the two points: P2 - P1 = (-1, 3, 2) - (2, 1, 3) = (-3, 2, -1).
+                Project this vector onto one of the direction vectors. Let's project onto d1:
+                Shortest distance vector = (P2 - P1) - ((P2 - P1) dot d1) * d1 / |d1|^2
+                = (-3, 2, -1) - ((-3, 2, -1) dot (1, 2, 3)) * (1, 2, 3) / (1^2 + 2^2 + 3^2)
+                <br><br>
+                Trick to remember: To find the shortest distance between two skew lines, calculate the vector connecting any two points on the lines and project it onto the direction vector of one of the lines. The magnitude of the projected vector represents the shortest distance.
+            </p>
+        </div>
+        <div class="white-colored content-data">
+            <h2 class="sub-heading">Sphere, Cones, and Cylinders</h2>
+            <p>
+                <strong>1: Equation of a sphere</strong> 
+                <br><br>
+                The equation of a sphere with center (h, k, l) and radius r is given by:
+                (x - h)^2 + (y - k)^2 + (z - l)^2 = r^2
+                The equation represents all the points in 3D space that are equidistant from the center of the sphere.
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                Consider a sphere with center (2, -1, 3) and radius 5. The equation of the sphere is:
+                (x - 2)^2 + (y + 1)^2 + (z - 3)^2 = 25
+                <br><br>            
+                Trick to remember: The equation of a sphere is (x - h)^2 + (y - k)^2 + (z - l)^2 = r^2, where (h, k, l) represents the center of the sphere and r is its radius.
+                <br><br>
+                <strong>Topic 2: General equation of a sphere</strong>
+                <br><br>
+                The general equation of a sphere is of the form:
+                x^2 + y^2 + z^2 + 2gx + 2fy + 2hz + c = 0
+                The coefficients g, f, h, and c determine the position and size of the sphere.
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                The general equation of a sphere is x^2 + y^2 + z^2 + 4x - 6y + 2z + 9 = 0.
+                <br><br>        
+                Trick to remember: The general equation of a sphere is x^2 + y^2 + z^2 + 2gx + 2fy + 2hz + c = 0, where g, f, h, and c are the coefficients that determine the position and size of the sphere.
+                <br><br>        
+                <strong>Topic 3: Sphere through four given points</strong>
+                <br><br>
+                To find the equation of a sphere passing through four given points, we can set up a system of equations using the equation of a sphere and substitute the coordinates of the points into the equation.
+                This will result in a system of four equations, which can be solved to find the unknowns (center coordinates and radius) of the sphere.
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                Given four points A(1, 2, 3), B(-2, 3, 1), C(4, -1, 5), and D(-3, -2, 4), we can find the equation of the sphere passing through these points.
+                            
+                Substitute the coordinates of the points into the equation (x - h)^2 + (y - k)^2 + (z - l)^2 = r^2 and set up a system of equations. Solve the system to find the center (h, k, l) and radius r of the sphere.
+                <br><br>    
+                Trick to remember: To find the equation of a sphere passing through four given points, substitute the coordinates of the points into the equation of a sphere (x - h)^2 + (y - k)^2 + (z - l)^2 = r^2 and solve the resulting system of equations for the center coordinates (h, k, l) and radius r of the sphere.
+                <br><br>
+                <strong>Topic 4: Intersection of spheres</strong>
+                <br><br>
+                The intersection of two spheres is the set of points that lie on both spheres.
+                To find the intersection, we equate the equations of the two spheres and solve the resulting system of equations.
+                The solution will be either a single point, a circle (if the spheres intersect at more than one point), or no intersection (if the spheres do not intersect).
+                <br><br>
+                <strong>Example:</strong>
+                <br><br>
+                Consider two spheres with equations:<br>
+                Sphere 1: (x - 2)^2 + (y - 3)^2 + (z - 1)^2 = 4
+                Sphere 2: (x + 1)^2 + (y - 2)^2 + (z - 5)^2 = 9 <br>
+                            
+                To find the intersection of these spheres, we equate the equations: <br>                           
+                (x - 2)^2 + (y - 3)^2 + (z - 1)^2 = 4
+                (x + 1)^2 + (y - 2)^2 + (z - 5)^2 = 9<br>
+                            
+                Expanding and simplifying these equations, we get:          <br>                  
+                x^2 - 4x + 4 + y^2 - 6y + 9 + z^2 - 2z + 1 = 4
+                x^2 + 2x + 1 + y^2 - 4y + 4 + z^2 - 10z + 25 = 9<br>
+                            
+                Combining like terms, we have:  <br>                          
+                x^2 - 4x + y^2 - 6y + z^2 - 2z + 10 = 0
+                x^2 + 2x + y^2 - 4y + z^2 - 10z + 20 = 0<br>
+                            
+                Subtracting the second equation from the first equation, we eliminate the quadratic terms:   <br>    
+                -6x - 2y + 12 = 0<br>
+                            
+                This represents a line in 3D space, which is the intersection of the two spheres.
+                <br><br>   
+                Trick to remember: To find the intersection of two spheres, equate their equations and solve the resulting system of equations. The solution represents the points of intersection, which can be a single point, a circle, or no intersection at all.
+                <br><br>    
+                Note: In this example, we obtained a line as the intersection because the spheres are intersecting each other.
+            </p>
+        </div>
+    </body>
+</html>
